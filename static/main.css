@@ -62,11 +62,51 @@
 
 .image-container {
     display: flex;
-    justify-content: center;  
-    align-items: center;       
+    flex-direction: column;  /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    text-align: center;      /* Ensure text is centered */
+    margin-bottom: 20px;     /* Space below each container */
 }
+
 .view-image {
     border-radius: 5%;
-    width: 50%;
-    max-width: 100%; 
+    width: 100%; /* Use 100% of the .square container */
+    max-width: 100%; /* Prevents the image from exceeding its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.square {
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-link {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    width: 100%;             
+}
+
+.subtitle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    background-color: #e9ccff;
+    padding: 5px;
+    border: 1px solid gray;
+    width: fit-content;
+    font-family: 'Roboto Mono';
+    color: rgb(96, 96, 96);
+}
+
+.subtitle-button:hover {
+    background-color:  #e0ff78;
 }
