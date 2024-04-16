@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+    <!-- Gettng Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<title> Dorm Cooking ᡣ𐭩 •｡ꪆৎ ˚⋅</title>
+</head>
+
+<body>    
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <a class="navbar-link" href="/recipes">Recipes</a>
+                    <a class="navbar-link" href="/hints">Helpful Hints</a>
+                    <a class="navbar-link" href="/quizzes">Quizzes</a>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <a class="navbar-title" href="/">Dorm Cooking ᡣ𐭩 •｡ꪆৎ ˚⋅</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">   
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
+
+
+
+
