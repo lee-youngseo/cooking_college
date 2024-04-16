@@ -1,0 +1,72 @@
+.navbar {
+    background-color: #ddcbff;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.navbar-title {
+    color: rgb(0, 0, 0);
+    margin-right: 5px;
+    font-size: large;
+    font-family: 'Roboto Mono';
+}
+
+.navbar-link {
+    color: black;
+    background-color: #e0ff78;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-link:hover {
+    background-color:  #b1d833;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+}
+
+.home-title {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Roboto';
+
+}
+
+.lilac {
+    color: #c6a7ff;
+
+}
+
+.cooking-summary {
+    font-size: large;
+    font-family: 'Roboto Mono';
+    color: gray;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+}
+.view-image {
+    border-radius: 5%;
+    width: 50%;
+    max-width: 100%; 
+}

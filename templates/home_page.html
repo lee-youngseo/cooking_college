@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script src="{{url_for('static', filename='home_page.js')}}"></script>
+
+<div class="subtitle lilac">Dorm Cooking Made Easy!</div>
+<br>
+<div class="cooking-summary">
+    Whether you're a cooking novice or just looking to spice up your meal prep,
+    our site is your ultimate guide to dorm-friendly dishes.
+    <br>
+    <br>
+    From quick snacks to wholesome meals, we've handpicked a variety of recipes 
+    that are not only easy to make with limited tools and ingredients but are also 
+    budget-friendly and super tasty. Explore our selection to find the perfect meal for any time of day or night.
+</div>
+<div class="image-container">
+    <img src="https://cookanyday.com/cdn/shop/articles/Blog_Dorm-Cooking.jpg" class="img-fluid view-image" alt="cooking in dorm">
+</div>
+<br>
+<div class="subtitle lilac">Happy cooking!</div>
+
+{% endblock %}
