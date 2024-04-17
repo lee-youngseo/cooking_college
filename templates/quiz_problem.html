@@ -4,14 +4,15 @@
 
     <script src="{{url_for('static', filename='quiz_problem.js')}}"></script>
     <script>
-    let problem = {{ problem|tojson }}
-    let problem_id = {{ problem_id|tojson }}
-    let quizz_id = {{ id|tojson }}
+    let problem = {{ problem|tojson }};
+    let problem_id = {{ problem_id|tojson }};
+    let quiz_id = {{ id|tojson }};
+    let totalProblems = {{ total_problems|tojson }};
     </script>
 
     <div class="subtitle lilac">Question {{ problem_id }}</div>
     <br>
     <div class="row" id="questions-container"></div>
-    <button id="quiz-next-button">Next</button>
+   <!-- <button id="quiz-next-button">Next</button> -->
 
 {% endblock %}

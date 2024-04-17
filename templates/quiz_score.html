@@ -4,8 +4,9 @@
 
     <script src="{{url_for('static', filename='quiz_score.js')}}"></script>
     <script>
-    let score = {{ score|tojson }}
-    let quiz_id = {{ id|tojson }}
+    let score = {{ score|tojson }};
+    let quiz_id = {{ id|tojson }};
+    let totalProblems = {{ total_problems|tojson }};
     </script>
 
     <div class="subtitle lilac">Final Score</div>

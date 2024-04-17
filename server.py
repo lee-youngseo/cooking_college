@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for
+import json
 
 app = Flask(__name__)
 
@@ -318,6 +319,8 @@ quiz_data = {
     }
 }
 
+score = 0
+
 
 @app.route('/')
 def home():
@@ -340,18 +343,38 @@ def quiz_start(quiz_id: int):
     return render_template('quiz_start.html', id=quiz_id, name=quiz_info['name'], image=quiz_info['image'])
 
 
-@app.route('/test_recipe/<quiz_id>/problems/<problem_id>')
+@app.route('/test_recipe/<quiz_id>/problems/<problem_id>', methods=['GET', 'POST'])
 def quiz_problem(quiz_id: int, problem_id: int):
+    global score
     quiz_info = quiz_data[int(quiz_id)]
     problem = quiz_info['problems'][int(problem_id)]
-    return render_template('quiz_problem.html', id=quiz_id, problem_id=problem_id, problem=problem)
+    if request.method == 'POST':
+        data = request.json
+        if data['point']:
+            score += int(data['point'])
+            print(score)
+        return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
+
+    return render_template('quiz_problem.html', id=quiz_id, problem_id=problem_id, problem=problem,
+                           total_problems=len(quiz_info['problems']))
+
+
+@app.route('/score', methods=['GET', 'POST'])
+def update_score():
+    global score
+    if request.method == 'POST':
+        print('HI')
+        score += int(request.json['point'])
+        return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
 
 
 @app.route('/test_recipe/<quiz_id>/score')
 def quiz_score(quiz_id):
-    score = 3
-    return render_template('quiz_score.html', id=quiz_id, score=score, recipe_id=quiz_id,
-                           name=recipe_data[quiz_id]['name'], image=recipe_data[quiz_id]['image'])
+    global score
+    quiz_info = quiz_data[int(quiz_id)]
+    final_score = score
+    score = 0
+    return render_template('quiz_score.html', id=quiz_id, score=final_score, total_problems=len(quiz_info['problems']))
 
 
 @app.route('/hints')
