@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <script src="{{url_for('static', filename='quiz_problem.js')}}"></script>
+    <script>
+    let problem = {{ problem|tojson }}
+    </script>
+
+    <div class="subtitle lilac">Question {{ problem_id }}</div>
+    <br>
+    <div class="row" id="questions-container"></div>
+
+{% endblock %}
