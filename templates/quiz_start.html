@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script src="{{url_for('static', filename='quiz_start.js')}}">
+</script>
+
+    <div class="subtitle lilac">Test your knowledge of {{ name }}</div>
+    <div class="image-container"><img src="{{ image }}" class="view-image square" alt="{{ name }}"></div>
+    <a href="/test_recipe/{{ id }}/problems/1" class="recipe-link"><div id="quiz-start-button">Start</div></a>
+<br>
+<div class="row" id="quiz-start-container"></div>
+
+{% endblock %}
