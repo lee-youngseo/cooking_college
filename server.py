@@ -76,10 +76,44 @@ recipe_data = {
             'image': 'https://i0.wp.com/thefoodiediaries.co/wp-content/uploads/2022/01/img_1427.jpg'
          },
       }
-      
+   }
+}
+
+quiz_data = {
+   '1': {},
+   '2': {},
+   '3': {
+      'questions': {
+         '1': {
+            'question': 'For how long should you cook the noodles?',
+            'answers': {
+               '1': '3 minutes',
+               '2': '1 minute',
+               '3': 'the package instructions',
+            },
+            'correct_answer': '3'
+         },
+         '2': {
+            'question': 'What should you do after cooking the noodles?',
+            'answers': {
+               '1': 'Eat the noodles',
+               '2': 'Drain the noodles and set aside',
+               '3': 'Add sauces to the noodles',
+            },
+            'correct_answer': '2'
+         },
+         '3': {
+            'question': 'What does the sauce consist of?',
+            'answers': {
+               '1': 'Soy sauce, peanut butter, garlic, and scallions',
+               '2': 'Soy sauce, peanut butter, and garlic',
+               '3': 'Soy sauce, garlic, and scallions',
+            },
+            'correct_answer': '1'
+         }
       }
    }
-
+}
 
 @app.route('/')
 def home():
