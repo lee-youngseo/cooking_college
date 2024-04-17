@@ -1,6 +1,13 @@
 $(document).ready(function() {
     var recipeId = $('body').data('recipe-id');
     var key = $('body').data('key');
+    var startTime = new Date().getTime();
+
+    var timer = setInterval(function() {
+        var currentTime = new Date().getTime();
+        var timeSpent = currentTime - startTime;
+        console.log("Time spent (ms):", timeSpent);
+    }, 1000);
 
     $.ajax({
         url: `/get_supplies_ingredients/${recipeId}`,
@@ -14,12 +21,12 @@ $(document).ready(function() {
                             $('#supplies_ingredients_container').append(
                                 `<div class="col-3">
                                     <div class="image-container">
-                                        <img src="${supply.image}" class="view-image square" alt="${supply.name}"> 
+                                        <img src="${supply.image}" class="view-image square" alt="${supply.name}">
                                     </div>
                                     <div class="label">${supply.name}</div>
                                 </div>`
                             );
-                        });  
+                        });
                     }
                 }
 
@@ -30,7 +37,7 @@ $(document).ready(function() {
                             $('#supplies_ingredients_container').append(
                                 `<div class="col-3">
                                     <div class="image-container">
-                                        <img src="${ingredient.image}" class="view-image square" alt="${ingredient.name}"> 
+                                        <img src="${ingredient.image}" class="view-image square" alt="${ingredient.name}">
                                     </div>
                                     <div class="label">${ingredient.name}</div>
                                 </div>`
@@ -38,8 +45,8 @@ $(document).ready(function() {
                         });
                     }
                 }
-                
+
             });
         }
     });
-});     
+});
