@@ -185,6 +185,10 @@ def recipes():
 def quizzes():
    return render_template('quizzes.html')
 
+@app.route('/hints')
+def hints():
+   return render_template('hints.html')
+
 @app.route('/get_recipes', methods=['GET'])
 def get_recipes():
    return jsonify(recipe_data)
