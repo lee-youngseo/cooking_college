@@ -1,11 +1,69 @@
-from flask import Flask, render_template, request, jsonify, Markup, redirect, url_for
+from flask import Flask, render_template, request, jsonify, redirect, url_for
 
 app = Flask(__name__)
 
 recipe_data = {
    '1': {
       'name': 'Feta Salad',
-      'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/06/Greek-Brown-and-Wild-Rice-Bowls_EXPS_SDAS18_204870_C03_28__10b-3.jpg'
+      'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/06/Greek-Brown-and-Wild-Rice-Bowls_EXPS_SDAS18_204870_C03_28__10b-3.jpg',
+      'supplies': {
+         '1':{
+            'name': 'Cutting Board',
+            'image': 'https://www.buildmat.com.au/cdn/shop/products/buildmat-kitchen-accessories-buildmat-wooden-chopping-board-sn101088-36435068059868_800x.png'
+         },
+         '2':{
+            'name': 'Bowl',
+            'image': 'https://www.heathceramics.com/cdn/shop/products/large-serving-bowl-opaque-white-heath-ceramics_108-05.jpg'
+         },
+         '3':{
+            'name': 'Kitchen Knife',
+            'image': 'https://www.opinel-usa.com/cdn/shop/products/Les-Forges-1890-8-Chef-Knife-Large-Kitchen-Knife_2000x.jpg'
+         },
+      },
+      'ingredients': {
+         '1': {
+            'name': 'Ready to Serve Rice',
+            'image': 'https://www.goya.com/media/8420/brown-heat-serve-rice.png?width=274'
+         },
+         '2': {
+            'name': 'Greek Vinaigrette',
+            'image': 'https://images.heb.com/is/image/HEBGrocery/000081144-1'
+         },
+         '3': {
+            'name': 'Feta Cheese',
+            'image': 'https://target.scene7.com/is/image/Target/GUEST_c63a48a6-c099-4522-a0bb-8932bf34a521?wid=488&hei=488&fmt=pjpeg'
+         },
+         '4': {
+            'name': 'Cherry Tomatoes',
+            'image': 'https://target.scene7.com/is/image/Target/GUEST_95c07dd1-974a-436b-8faa-808f100e7950?wid=488&hei=488&fmt=pjpeg'
+         },
+         '5': {
+            'name': 'Avocadoes',
+            'image': 'https://cdn.britannica.com/72/170772-050-D52BF8C2/Avocado-fruits.jpg'
+         },
+         '6':{
+            'name': 'Black Olives',
+            'image': "https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/64624093c4228d2fcce84d1e_99482416843-2023-cen-ecommerce-directship-ripelargepittedolives.jpg"
+         }
+      },
+      'instructions': {
+         '1': {
+            'step': 'On a plate (or cutting board), cut the avocado and cherry tomatoes.',
+            'image': 'https://feelgoodfoodie.net/wp-content/uploads/2023/10/How-to-Cut-an-Avocado-TIMG.jpg'
+         },
+         '2': {
+            'step': 'In a microwave-safe bowl, combine rice mix and 2 tablespoons vinaigrette. Cover and cook on high until heated through, about 2 minutes.',
+            'image': 'https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_487/k%2FPhoto%2FLifestyle%2F2021-04-Taste-Test-Microwavable-White-Rice%20%2FKitchn-2021-Microwave-Rice-Taste-Test-1'
+         },
+         '3': {
+            'step': 'Divide between 2 bowls. Top with avocado, tomatoes, cheese, olives, remaining dressing and, if desired, parsley.',
+            'image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVU5iTKckCfI0tZS0USg_g5kO_9L6fk4fjg7sqv5gA6VtB15zG'
+         },
+         '4': {
+            'step': 'Mix it all up and add the rest of your dressing! And Enjoy!',
+            'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/06/Greek-Brown-and-Wild-Rice-Bowls_EXPS_SDAS18_204870_C03_28__10b-3.jpg'
+         },
+      }
    },
    '2': {
       'name': 'Glazed Squash',
