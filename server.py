@@ -227,31 +227,31 @@ quiz_data = {
        'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/01/Coconut-Acorn-Squash_exps149543_TH132767C04_25_1bC_RMS.jpg',
        'problems': {
             1: {
-                'prompt': 'For how long should you cook the noodles?',
+                'prompt': 'What is the ingredient that makes the squash sweet?',
                 'responses': {
-                    1: '3 minutes',
-                    2: '1 minute',
-                    3: 'the package instructions',
+                    1: 'White Sugar',
+                    2: 'Cocoa Powder',
+                    3: 'Brown Sugar',
                 },
                 'correct_response': 3,
                 'response_type': 'ul'
             },
             2: {
-                'prompt': 'What should you do after cooking the noodles?',
+                'prompt': 'How many times do you flip squash over when roasting?',
                 'responses': {
-                    1: 'Eat the noodles',
-                    2: 'Drain the noodles and set aside',
-                    3: 'Add sauces to the noodles',
+                    1: '2',
+                    2: '4',
+                    3: 'trick question, 1',
                 },
-                'correct_response': 2,
+                'correct_response': 1,
                 'response_type': 'ul'
             },
             3: {
-                'prompt': 'What does the sauce consist of?',
+                'prompt': 'How much time do you roast the squash for the last step',
                 'responses': {
-                    1: 'Soy sauce, peanut butter, garlic, and scallions',
-                    2: 'Soy sauce, peanut butter, and garlic',
-                    3: 'Soy sauce, garlic, and scallions',
+                    1: '5 minutes',
+                    2: '20 minutes',
+                    3: 'however amount of time its takes for the sugar to be golden',
                 },
                 'correct_response': 1,
                 'response_type': 'ul'
@@ -323,6 +323,11 @@ def quiz_problem(quiz_id: int, problem_id: int):
     quiz_info = quiz_data[int(quiz_id)]
     problem = quiz_info['problems'][int(problem_id)]
     return render_template('quiz_problem.html', id=quiz_id, problem_id=problem_id, problem=problem)
+
+@app.route('/test_recipe/<quiz_id>/score')
+def quiz_score(quiz_id):
+    score = 3
+    return render_template('quiz_score.html', id=quiz_id, score=score,recipe_id = quiz_id, name = recipe_data[quiz_id]['name'], image = recipe_data[quiz_id]['image'])
 
 
 @app.route('/hints')

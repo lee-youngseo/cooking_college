@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <script src="{{url_for('static', filename='quiz_score.js')}}"></script>
+    <script>
+    let score = {{ score|tojson }}
+    let quiz_id = {{ id|tojson }}
+    </script>
+
+    <div class="subtitle lilac">Final Score</div>
+    <br>
+    <div class="minititle  lilac">You got a {{score}}/4!</div>
+    <br> 
+    <button id="recipe-restart-button" class = "recipe-link">Click here to go through the recipe again!</button>
+    <div class="row" id="score-container"></div>
+{% endblock %}
