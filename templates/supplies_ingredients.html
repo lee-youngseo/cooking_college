@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<body data-recipe-id="{{ recipe_id }}" data-key="{{key}}">
+    <div class="container">            
+        <div class="subtitle lilac">{{key}}</div>
+        <div class="row" id="supplies_ingredients_container"></div>
+        <a class="subtitle-button" href="/learn_recipe/{{ recipe_id }}">Back</a>
+    </div>
+    <script src="{{url_for('static', filename='supplies_ingredients.js')}}"></script>
+</body>
+
+{% endblock %}

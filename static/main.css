@@ -147,4 +147,12 @@
     font-size: 16px;
     display: block;
     margin: auto;
+
+.label {
+    font-size: large;
+    font-family: 'Roboto Mono';
+    color: rgb(87, 87, 87);
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #edd5ff;
 }
