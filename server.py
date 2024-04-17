@@ -67,7 +67,73 @@ recipe_data = {
    },
    '2': {
       'name': 'Glazed Squash',
-      'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/01/Coconut-Acorn-Squash_exps149543_TH132767C04_25_1bC_RMS.jpg'
+      'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/01/Coconut-Acorn-Squash_exps149543_TH132767C04_25_1bC_RMS.jpg',
+      'supplies': {
+         '1':{
+            'name': 'Aluminum Foil',
+            'image': 'https://www.allrecipes.com/thmb/BoxoiPyfiLYcAc2GWY2HVIURbzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/102368196_aluminum-foil-2000-4af779937cc9438cbe9be9d54c1f2e34.jpg'
+         },
+         '2':{
+            'name': 'Baking Sheet',
+            'image': 'https://www.nordicware.com/wp-content/uploads/2021/04/44600_The_Big_Sheet_002_780x780__55006.1648753775.1280.1280.jpg'
+         },
+         '3':{
+            'name': 'Kitchen Knife',
+            'image': 'https://www.opinel-usa.com/cdn/shop/products/Les-Forges-1890-8-Chef-Knife-Large-Kitchen-Knife_2000x.jpg'
+         },
+         '4':{
+            'name': 'Cutting Board',
+            'image': 'https://www.buildmat.com.au/cdn/shop/products/buildmat-kitchen-accessories-buildmat-wooden-chopping-board-sn101088-36435068059868_800x.png'
+         },
+         '5':{
+            'name': 'Spoon',
+            'image': 'https://i.pinimg.com/originals/70/41/50/7041508df360f4517d9dc88b178c0419.png'
+         }
+      },
+      'ingredients': {
+         '1': {
+            'name': 'Vegetable Oil',
+            'image': 'https://i5.peapod.com/c/YS/YS0IE.jpg'
+         },
+         '2': {
+            'name': 'Brown Sugar',
+            'image': 'https://i5.walmartimages.com/asr/0d74547e-9e21-42f4-bb95-7dc1a85f907d.713258977353ca217077f6d73d545bf7.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF'
+         },
+         '3': {
+            'name': 'Acorn Squash',
+            'image': 'https://www.kroger.com/product/images/large/back/0000000004750'
+         },
+         '4': {
+            'name': 'Black Pepper',
+            'image': 'https://badiaspices.com/wp-content/uploads/2018/01/033844012311.jpg'
+         },
+         '5': {
+            'name': 'Salt',
+            'image': 'https://www.containerstore.com/catalogimages/212810/670060SaltOrPepperShaker2ozV2_600.jpg'
+         },
+      },
+      'instructions': {
+         '1': {
+            'step': 'Cut the squash in half using a knife on a cutting board and scrape the seeds out with a spoon.',
+            'image': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu8IdrA9fyUjg84kK0DaFOfZKKTCVHkW1_8v_uGTEvI-UHzUZJ'
+         },
+         '2': {
+            'step': 'Preheat the oven to 400 and add aluminum foil to a baking sheet with some oil covering the top.',
+            'image': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaw5eCwcMS4lKvpbD0NlMUf4W0pKvc4V8zh8Ye31J2NMGCl2GT'
+         },
+         '3': {
+            'step': 'Lay squash pieces on baking sheets. Season with salt and pepper; sprinkle squashes evenly with half the sugar.',
+            'image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwwlrOMIC_F_nVt3mPj7RRmDKLxcbjd9AtTI53RdrAuR3dfmmG'
+         },
+         '4': {
+            'step': 'Roast until sugar has melted, about 5 minutes. Remove baking sheets from oven.',
+            'image': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqvcVdfttkj8GzBnj2KaTyj7r-05gyNiFpndIgMnQ3iYQVuK0a'
+         },
+         '5': {
+            'step': 'Flip the pieces over with a spoon. Season with salt and pepper; sprinkle evenly with remaining sugar. Roast until tender, about 20 minutes. Enjoy',
+            'image': 'https://www.foodandwine.com/thmb/Q-4ciItjPFjSSQrUnHjt_TelVAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/brown-sugar-roasted-acorn-squash-recipe-FT-BLOG1019-f14d448c609a4c09b595baa6fe04d7ec.jpg'
+         },
+      }
    },
    '3': {
       'name': 'Garlic Scallion Ramen',
@@ -139,7 +205,37 @@ recipe_data = {
 
 quiz_data = {
    '1': {},
-   '2': {},
+   '2': {
+      'questions': {
+         '1': {
+            'question': 'For how long should you cook the noodles?',
+            'answers': {
+               '1': '3 minutes',
+               '2': '1 minute',
+               '3': 'the package instructions',
+            },
+            'correct_answer': '3'
+         },
+         '2': {
+            'question': 'What should you do after cooking the noodles?',
+            'answers': {
+               '1': 'Eat the noodles',
+               '2': 'Drain the noodles and set aside',
+               '3': 'Add sauces to the noodles',
+            },
+            'correct_answer': '2'
+         },
+         '3': {
+            'question': 'What does the sauce consist of?',
+            'answers': {
+               '1': 'Soy sauce, peanut butter, garlic, and scallions',
+               '2': 'Soy sauce, peanut butter, and garlic',
+               '3': 'Soy sauce, garlic, and scallions',
+            },
+            'correct_answer': '1'
+         }
+      }
+   },
    '3': {
       'questions': {
          '1': {
