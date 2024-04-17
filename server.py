@@ -224,9 +224,9 @@ quiz_data = {
                 'prompt': 'What is the first step in making Feta Salad?',
                 'image': '',
                 'responses': {
-                    '1': 'Cut avocados',
-                    '2': 'Cook rice',
-                    '3': 'Blend salad',
+                    1: 'Cut avocados',
+                    2: 'Cook rice',
+                    3: 'Blend salad',
                 },
                 'correct_response': '1',
                 'response_type': 'ul'
@@ -235,10 +235,10 @@ quiz_data = {
                 'prompt': 'Which of these supplies is NOT needed in creating Feta Salad?',
                 'image': '',
                 'responses': {
-                    '1': 'Kitchen knife',
-                    '2': 'Blender',
-                    '3': 'Cutting board',
-                    '4': 'Bowl'
+                    1: 'Kitchen knife',
+                    2: 'Blender',
+                    3: 'Cutting board',
+                    4: 'Bowl'
                 },
                 'correct_response': '2',
                 'response_type': 'ul',
