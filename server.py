@@ -203,71 +203,6 @@ recipe_data = {
    }
 }
 
-quiz_data = {
-   '1': {},
-   '2': {
-      'questions': {
-         '1': {
-            'question': 'For how long should you cook the noodles?',
-            'answers': {
-               '1': '3 minutes',
-               '2': '1 minute',
-               '3': 'the package instructions',
-            },
-            'correct_answer': '3'
-         },
-         '2': {
-            'question': 'What should you do after cooking the noodles?',
-            'answers': {
-               '1': 'Eat the noodles',
-               '2': 'Drain the noodles and set aside',
-               '3': 'Add sauces to the noodles',
-            },
-            'correct_answer': '2'
-         },
-         '3': {
-            'question': 'What does the sauce consist of?',
-            'answers': {
-               '1': 'Soy sauce, peanut butter, garlic, and scallions',
-               '2': 'Soy sauce, peanut butter, and garlic',
-               '3': 'Soy sauce, garlic, and scallions',
-            },
-            'correct_answer': '1'
-         }
-      }
-   },
-   '3': {
-      'questions': {
-         '1': {
-            'question': 'For how long should you cook the noodles?',
-            'answers': {
-               '1': '3 minutes',
-               '2': '1 minute',
-               '3': 'the package instructions',
-            },
-            'correct_answer': '3'
-         },
-         '2': {
-            'question': 'What should you do after cooking the noodles?',
-            'answers': {
-               '1': 'Eat the noodles',
-               '2': 'Drain the noodles and set aside',
-               '3': 'Add sauces to the noodles',
-            },
-            'correct_answer': '2'
-         },
-         '3': {
-            'question': 'What does the sauce consist of?',
-            'answers': {
-               '1': 'Soy sauce, peanut butter, garlic, and scallions',
-               '2': 'Soy sauce, peanut butter, and garlic',
-               '3': 'Soy sauce, garlic, and scallions',
-            },
-            'correct_answer': '1'
-         }
-      }
-   }
-}
 
 quiz_data = {
     1: {
@@ -281,6 +216,78 @@ quiz_data = {
                     1: '2 minutes',
                     2: '30 seconds',
                     3: '5 minutes',
+                },
+                'correct_response': 1,
+                'response_type': 'ul'
+            }
+        }
+    },
+    2: {
+       'name': 'Glazed Squash',
+       'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/01/Coconut-Acorn-Squash_exps149543_TH132767C04_25_1bC_RMS.jpg',
+       'problems': {
+            1: {
+                'prompt': 'For how long should you cook the noodles?',
+                'responses': {
+                    1: '3 minutes',
+                    2: '1 minute',
+                    3: 'the package instructions',
+                },
+                'correct_response': 3,
+                'response_type': 'ul'
+            },
+            2: {
+                'prompt': 'What should you do after cooking the noodles?',
+                'responses': {
+                    1: 'Eat the noodles',
+                    2: 'Drain the noodles and set aside',
+                    3: 'Add sauces to the noodles',
+                },
+                'correct_response': 2,
+                'response_type': 'ul'
+            },
+            3: {
+                'prompt': 'What does the sauce consist of?',
+                'responses': {
+                    1: 'Soy sauce, peanut butter, garlic, and scallions',
+                    2: 'Soy sauce, peanut butter, and garlic',
+                    3: 'Soy sauce, garlic, and scallions',
+                },
+                'correct_response': 1,
+                'response_type': 'ul'
+            }
+        }
+    },
+    3: {
+       'name': 'Garlic Scallion Ramen',
+       'image': 'https://www.kitchentreaty.com/wp-content/uploads/2020/01/super-simple-miso-ramen-5-420x560.jpg',
+       'problems': {
+            1: {
+                'prompt': 'For how long should you cook the noodles?',
+                'responses': {
+                    1: '3 minutes',
+                    2: '1 minute',
+                    3: 'the package instructions',
+                },
+                'correct_response': 3,
+                'response_type': 'ul'
+            },
+            2: {
+                'prompt': 'What should you do after cooking the noodles?',
+                'responses': {
+                    1: 'Eat the noodles',
+                    2: 'Drain the noodles and set aside',
+                    3: 'Add sauces to the noodles',
+                },
+                'correct_response': 2,
+                'response_type': 'ul'
+            },
+            3: {
+                'prompt': 'What does the sauce consist of?',
+                'responses': {
+                    1: 'Soy sauce, peanut butter, garlic, and scallions',
+                    2: 'Soy sauce, peanut butter, and garlic',
+                    3: 'Soy sauce, garlic, and scallions',
                 },
                 'correct_response': 1,
                 'response_type': 'ul'
