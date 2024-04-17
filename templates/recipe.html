@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<body data-recipe-id="{{ recipe_id }}">
+    <div class="container">
+        <div class="cooking-summary">
+            Before you start cooking {{name}}, make sure you have all the necessary supplies and ingredients.
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3 align-content-center">
+                <img src="{{image}}" class="view-image" alt="{{name}}">
+            </div>
+            <div class="col-md-3 align-content-center">
+                <a class="subtitle-button" href="/learn_recipe/{{ recipe_id }}/ingredients">Ingredients</a>
+            </div>
+            <div class="col-md-3 align-content-center">
+                <a class="subtitle-button" href="/learn_recipe/{{ recipe_id }}/supplies">Supplies</a>
+            </div>
+            <div class="col-md-3 align-content-center">
+                <a class="subtitle-button"  href="/learn_recipe/{{ recipe_id }}/instructions">Instructions</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
