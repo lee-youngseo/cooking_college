@@ -6,9 +6,12 @@
 </script>
 
     <div class="subtitle lilac">Test your knowledge of {{ name }}</div>
+    <br>
     <div class="image-container"><img src="{{ image }}" class="view-image square" alt="{{ name }}"></div>
-    <a href="/test_recipe/{{ id }}/problems/1" class="recipe-link"><div id="quiz-start-button">Start</div></a>
+    <br>
+    <div class = "button-container">
+        <a href="/test_recipe/{{ id }}/problems/1" class="navbar-link">Start</a>
+    </div>
 <br>
-<div class="row" id="quiz-start-container"></div>
 
 {% endblock %}

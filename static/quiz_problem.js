@@ -1,5 +1,5 @@
 function createProblem(problem){
-    let promptElement = $(`<div id="quiz-prompt">${problem['prompt']}</div><br>`);
+    let promptElement = $(`<div id="quiz-prompt">${problem['prompt']}</div><br><br>`);
     let responseElement = createResponse(problem['response_type']);
     let imageElement = $(`<div class="image-container"></div>`);
 
@@ -16,7 +16,9 @@ function createResponse(responseType){
             responseForm.append($(`<div><input type="radio" id="option-${key}" value="${key}" name="response"/>
                                 <label for="option-${key}">${responsesDict[key]}</label></div>`))
         })
-        let submitButton = $(`<button id="quiz-next-button" type="submit">Next</button>`);
+        let submitButton = $(`<br> <div class = "button-container">
+        <button id="quiz-next-button" class="navbar-link" type="submit">Next</button>
+        </div>`);
         responseForm.append(submitButton);
         responseParent.append(responseForm)
     }
