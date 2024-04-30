@@ -299,6 +299,22 @@ quiz_data = {
                 },
                 'correct_response': 1,
                 'response_type': 'ul'
+            },
+
+            4: {
+                'q_type': 'drag',
+                'prompt': 'Drag all the seasonings you use on the squash throughout the recipe',
+                'prompt_image': 'https://freepngimg.com/save/127290-acorn-ripe-squash-hd-image-free/600x580',
+                'responses': {
+                    '1': 'https://pngimg.com/d/salt_PNG7.png',
+                    '2': 'https://www.mccormick.com/-/media/project/oneweb/mccormick-us/mccormick/products/00052100004488_a1c1.png',
+                    '3': 'https://www.gfresh.com.au/wp-content/uploads/2021/02/G-Fresh_Refillable-Grinder_Black-Pepper_No-Box_646x858.png',
+                    '4': 'https://d1e3z2jco40k3v.cloudfront.net/-/media/project/oneweb/clubhouseca/products/club-house/clubhouse-garlic-powder.png',
+                    '5': 'https://pngimg.com/d/sugar_PNG98785.png',
+                    '6': 'https://waterbutlers.com/cdn/shop/products/Screen-Shot-2019-10-19-at-10.26.32-PM_692x.png'
+                },
+                'correct_response': [1, 3, 6],
+                'response_type': 'drag'
             }
         }
     },
