@@ -210,6 +210,7 @@ quiz_data = {
         'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/06/Greek-Brown-and-Wild-Rice-Bowls_EXPS_SDAS18_204870_C03_28__10b-3.jpg',
         'problems': {
             1: {
+                'q_type': 'mcq',
                 'prompt': 'For how long do you have to microwave the precooked rice?',
                 'image': 'https://www.marthastewart.com/thmb/R5e-wnZBjNbvQiYmd1CtBQTFcVY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/924877_master-recipe-brown-rice-05-13126d75658249b48e7c9ac32d180ab2.jpg',
                 'responses': {
@@ -221,6 +222,7 @@ quiz_data = {
                 'response_type': 'ul'
             },
             2: {
+                'q_type': 'mcq',
                 'prompt': 'What is the first step in making Feta Salad?',
                 'image': '',
                 'responses': {
@@ -232,6 +234,7 @@ quiz_data = {
                 'response_type': 'ul'
             },
             3: {
+                'q_type': 'mcq',
                 'prompt': 'Which of these supplies is NOT needed in creating Feta Salad?',
                 'image': '',
                 'responses': {
@@ -242,6 +245,21 @@ quiz_data = {
                 },
                 'correct_response': '2',
                 'response_type': 'ul',
+            },
+            4: {
+                'q_type': 'drag',
+                'prompt': 'Drag all the microwave safe items to the microwave',
+                'prompt_image': 'https://pngimg.com/d/microwave_PNG15719.png',
+                'responses': {
+                    '1': 'https://static.vecteezy.com/system/resources/previews/032/545/950/original/front-view-a-glass-of-water-isolated-on-transparent-background-png.png',
+                    '2': 'https://png.pngtree.com/png-clipart/20230930/original/pngtree-blue-ceramic-bowl-png-image_13022408.png',
+                    '3': 'https://em-content.zobj.net/source/twitter/348/takeout-box_1f961.png',
+                    '4': 'https://smidge.co.uk/media/catalog/product/cache/91221817c87827cfdd170d83789c1ac6/s/m/smid104-01.png',
+                    '5': 'https://pak-man.com/images/detailed/1/10J10.png',
+                    '6': 'https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-colorful-plastic-cups-and-plates-isolated-png-image_10225358.png'
+                },
+                'correct_response': [1, 2, 6],
+                'response_type': 'drag'
             }
         },
     },
@@ -250,6 +268,7 @@ quiz_data = {
         'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/01/Coconut-Acorn-Squash_exps149543_TH132767C04_25_1bC_RMS.jpg',
         'problems': {
             1: {
+                'q_type': 'mcq',
                 'prompt': 'What is the ingredient that makes the squash sweet?',
                 'responses': {
                     1: 'White Sugar',
@@ -260,6 +279,7 @@ quiz_data = {
                 'response_type': 'ul'
             },
             2: {
+                'q_type': 'mcq',
                 'prompt': 'How many times do you flip squash over when roasting?',
                 'responses': {
                     1: '2',
@@ -270,6 +290,7 @@ quiz_data = {
                 'response_type': 'ul'
             },
             3: {
+                'q_type': 'mcq',
                 'prompt': 'How much time do you roast the squash for the last step',
                 'responses': {
                     1: '5 minutes',
@@ -278,6 +299,22 @@ quiz_data = {
                 },
                 'correct_response': 1,
                 'response_type': 'ul'
+            },
+
+            4: {
+                'q_type': 'drag',
+                'prompt': 'Drag all the seasonings you use on the squash throughout the recipe',
+                'prompt_image': 'https://freepngimg.com/save/127290-acorn-ripe-squash-hd-image-free/600x580',
+                'responses': {
+                    '1': 'https://pngimg.com/d/salt_PNG7.png',
+                    '2': 'https://www.mccormick.com/-/media/project/oneweb/mccormick-us/mccormick/products/00052100004488_a1c1.png',
+                    '3': 'https://www.gfresh.com.au/wp-content/uploads/2021/02/G-Fresh_Refillable-Grinder_Black-Pepper_No-Box_646x858.png',
+                    '4': 'https://d1e3z2jco40k3v.cloudfront.net/-/media/project/oneweb/clubhouseca/products/club-house/clubhouse-garlic-powder.png',
+                    '5': 'https://pngimg.com/d/sugar_PNG98785.png',
+                    '6': 'https://waterbutlers.com/cdn/shop/products/Screen-Shot-2019-10-19-at-10.26.32-PM_692x.png'
+                },
+                'correct_response': [1, 3, 6],
+                'response_type': 'drag'
             }
         }
     },
@@ -286,6 +323,7 @@ quiz_data = {
         'image': 'https://www.kitchentreaty.com/wp-content/uploads/2020/01/super-simple-miso-ramen-5-420x560.jpg',
         'problems': {
             1: {
+                'q_type': 'mcq',
                 'prompt': 'For how long should you cook the noodles?',
                 'responses': {
                     1: '3 minutes',
@@ -296,6 +334,7 @@ quiz_data = {
                 'response_type': 'ul'
             },
             2: {
+                'q_type': 'mcq',
                 'prompt': 'What should you do after cooking the noodles?',
                 'responses': {
                     1: 'Eat the noodles',
@@ -306,6 +345,7 @@ quiz_data = {
                 'response_type': 'ul'
             },
             3: {
+                'q_type': 'mcq',
                 'prompt': 'What does the sauce consist of?',
                 'responses': {
                     1: 'Soy sauce, peanut butter, garlic, and scallions',
@@ -314,12 +354,27 @@ quiz_data = {
                 },
                 'correct_response': 1,
                 'response_type': 'ul'
+            },
+            4: {
+                'q_type': 'drag',
+                'prompt': 'Drag all the ingredients you need for the sauce into the bowl',
+                'prompt_image': 'https://www.heathceramics.com/cdn/shop/products/large-serving-bowl-opaque-white-heath-ceramics_108-05.jpg',
+                'responses': {
+                    '1': 'https://media.wegetanystock.co.uk/brandbank/images/8715035150102/1',
+                    '2': 'https://cdn.gardengrocer.com/attachments/photos/high_res/395.png?9340',
+                    '3': 'https://i.pinimg.com/originals/cf/95/f7/cf95f7a9a402160e883887b882107745.png',
+                    '4': 'https://static.vecteezy.com/system/resources/previews/027/216/058/original/garlic-garlic-garlic-transparent-background-ai-generated-free-png.png',
+                    '5': 'https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png',
+                    '6': 'https://png.pngtree.com/png-vector/20221123/ourmid/pngtree-fresh-fruit-cut-lemon-png-image_6153348.png'
+                },
+                'correct_response': [1, 2, 3],
+                'response_type': 'drag'
             }
         }
     }
 }
 
-score = 0
+score = 0.0
 
 
 @app.route('/')
@@ -348,23 +403,34 @@ def quiz_problem(quiz_id: int, problem_id: int):
     global score
     quiz_info = quiz_data[int(quiz_id)]
     problem = quiz_info['problems'][int(problem_id)]
+    problem_type = problem['q_type']
+    drag_items = None
+    drop_image = None
+
+    if problem_type == 'drag':
+        drag_items = problem.get('responses')
+        drop_image = problem.get('prompt_image')
+    else:
+        drag_items = {}
+        drop_image = ""
+
     if request.method == 'POST':
         data = request.json
+        print(data)
         if data['point']:
-            score += int(data['point'])
-            print(score)
+            score += float(data['point'])
         return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
 
     return render_template('quiz_problem.html', id=quiz_id, problem_id=problem_id, problem=problem,
-                           total_problems=len(quiz_info['problems']))
+                           total_problems=len(quiz_info['problems']), drag_items=drag_items, drop_image=drop_image)
 
 
 @app.route('/score', methods=['GET', 'POST'])
 def update_score():
     global score
     if request.method == 'POST':
-        print('HI')
-        score += int(request.json['point'])
+        print(request.json)
+        score += float(request.json['point'])
         return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
 
 
@@ -372,8 +438,11 @@ def update_score():
 def quiz_score(quiz_id):
     global score
     quiz_info = quiz_data[int(quiz_id)]
-    final_score = score
-    score = 0
+    if score < 0:
+        final_score = 0
+    else:
+        final_score = "{:.2f}".format(score)
+    score = 0.0
     return render_template('quiz_score.html', id=quiz_id, score=final_score, total_problems=len(quiz_info['problems']))
 
 

@@ -118,21 +118,6 @@
     background-color:  #e0ff78;
 }
 
-#quiz-start-button{
-    background-color: #e0ff78;
-    font-size: 25px;
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
-    border: thin solid black;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    border-radius: 20px;
-
-}
-
 #quiz-start-button:hover{
     background-color:  #b1d833;
 
@@ -140,6 +125,10 @@
 #questions-container{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #quiz-prompt{
     width: 100%;
@@ -165,48 +154,33 @@
     background-color: #edd5ff;
 }
 
-#quiz-next-button{
-    background-color: #e0ff78;
-    font-size: 25px;
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
-    border: thin solid black;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    border-radius: 20px;
-
-}
-
-#quiz-next-button:hover{
-    background-color:  #b1d833;
-
-}
-
 #score-container{
     width: 100%;
     height: 100%;
 }
 
-
-#recipe-restart-button{
-    background-color: #e0ff78;
-    font-size: 10px;
-    width: 150px;
-    height: 50px;
-    line-height: 10px;
-    border: thin solid black;
-    cursor: pointer;
+.button-container {
     display: flex;
     justify-content: center;
-    margin: auto;
-    border-radius: 20px;
-
+    width: 100%; 
 }
 
-#recipe-restart-button:hover{
-    background-color:  #b1d833;
+/* Add this CSS to control the size of all images within the #questions-container */
+#questions-container img {
+    max-width: 100%; /* This will ensure images are not larger than their container */
+    height: auto;    /* This will maintain the aspect ratio of the images */
+}
 
+/* Specific class for draggable items if you want to set a fixed size */
+.draggable {
+    width: 150px;  /* Adjust the width as needed */
+    height: auto;  /* Maintain the aspect ratio */
+    display: inline-block;
+}
+
+/* If your droppable area is also too large, you can set a fixed size */
+#droppable {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    display: flex;
 }
