@@ -3,13 +3,18 @@
 {% block content %}
 
     <script src="{{url_for('static', filename='quiz_problem.js')}}"></script>
-    <script>
-    let problem = {{ problem|tojson }};
-    let problem_id = {{ problem_id|tojson }};
-    let quiz_id = {{ id|tojson }};
-    let totalProblems = {{ total_problems|tojson }};
+    <script type="text/javascript">
+        var dragItems = {{ drag_items | default({}) | tojson | safe }};
+        var dropImage = {{ drop_image | default("") | tojson | safe }};
+        var problem = {{ problem | tojson | safe }};
+        var problemId = {{ problem_id | tojson | safe }};
+        var quizId = {{ id | tojson | safe }};
+        var totalProblems = {{ total_problems | tojson | safe }};
+        var droppedItems = {};
+        var currentDroppedItem = 0;
+        var points = 0;
     </script>
-
+      
     <div class="subtitle lilac">Question {{ problem_id }}</div>
     <div class="row" id="questions-container"></div>
 
