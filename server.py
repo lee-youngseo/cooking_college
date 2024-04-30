@@ -438,8 +438,10 @@ def update_score():
 def quiz_score(quiz_id):
     global score
     quiz_info = quiz_data[int(quiz_id)]
-    # make it 2 decimal places
-    final_score = "{:.2f}".format(score)
+    if score < 0:
+        final_score = 0
+    else:
+        final_score = "{:.2f}".format(score)
     score = 0.0
     return render_template('quiz_score.html', id=quiz_id, score=final_score, total_problems=len(quiz_info['problems']))
 

@@ -36,6 +36,7 @@ function setupDragAndDrop(){
                 points = points + 1/3;
                 draggable.draggable('disable');
             } else {
+                points = points - 1/3
                 alert("Incorrect item dropped");
                 draggable.hide();
             }
