@@ -222,8 +222,8 @@ quiz_data = {
                 'response_type': 'ul'
             },
             2: {
-                'q_type': 'mcq',
-                'prompt': 'What is the first step in making Feta Salad?',
+                'q_type': 'chop',
+                'prompt': 'Drag the knife to the avocado to chop! Click the button when you think you finished chopping!',
                 'image': '',
                 'responses': {
                     1: 'Cut avocados',
@@ -231,7 +231,7 @@ quiz_data = {
                     3: 'Blend salad',
                 },
                 'correct_response': '1',
-                'response_type': 'ul'
+                'response_type': 'dl'
             },
             3: {
                 'q_type': 'mcq',
@@ -384,6 +384,24 @@ quiz_data = {
 }
 
 cooking_mama = {
+    1: {
+        'name': 'Feta Salad',
+        'images': {
+            1: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWLULuW9zKSOygTLRRIQ4bdvz1COYRcIMIHE-HLDHfgyinueA-j_WljABZU9aFwsUccxlT0vbPIVlTANg3uBdVaFIeDsJjyvFXIb8ZPsrNN4gbKJhtoaYUYVzAXknrnoy-zD9iuTNHL-AhkGsDCriRlhRBbrSyqzM-6iuxpS0_hjWWoIOgpf_1VrMhXHFl/s320/Screen%20Shot%202024-05-01%20at%207.22.05%20PM.png',
+            2: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOpydCEc26-BKIP6Z1Ie9B1GKOeQLtL3GehaA3zSMoBr8Q__3Oy_4FtDzHLmaHziw1BrXfOfN4xzEvXDcMmh5SikvkbnqRG6Cq8JA-Yd74_Jo4hHtxmyiWwu8kKoNbgpApnWkpbQLPLGOslAOA2_gqzLRA3JVQx-9EQNCY6jH1I3qxSQXIBJRYMd2yTPTn/s320/Screen%20Shot%202024-05-01%20at%207.22.09%20PM.png',
+            3: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOhREU3r0BToIL7Ck4YsU9iOHoJPeADwrDXw0zEcL9jGBIWmgJMygXQVrYkDwU2WX0ax2dbNPozbTNKnmJzgyobT-xy1xqo0MnHfQ_jOf23zj3eKfiqUP6kwiMA1_ckVIwq2sF5E7IkVApoIsha1Hs5EaVSPH538uCm3A1XSXrrT5VE_KGtE4i3UY0I2wi/s320/Screen%20Shot%202024-05-01%20at%207.22.13%20PM.png',
+            4: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbVAG0VnBX6rXbYDbyzkAjNTs62C4YqntU3RBdESw8uROZ1fkjHxlkGSdCy1YOIYrxmGGVBlzO6rKr74q8MTkfZMcYPKYw6zLu9uxBqxXcNywTY2n4-MpUJ8VKb9jbMrZ6Dkq_HFNy5Mj8H9Ner1c2X3_erNGy6lMZ5B6gcLpcoAVi5rG_fKedVGD9CagI/s320/Screen%20Shot%202024-05-01%20at%207.22.18%20PM.png',
+            5: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjyAMsQ3k3LRE7GhFJn0c_afOqEP30QmzphurPeR-6JmGVnAyBTSi0NNXJhgL6tdLIN4zfCzTIbltAzsrJSKs0NLwhB39oyIJSdXRn18xcpbQcE62Z9p5qT39nw6PTNqzT7Z_uAjCkZ2JfLFsBzDLp39Rcs7rjGyrYRUSkvZbBNIAPT8u6McLooNRijTHT/s320/Screen%20Shot%202024-05-01%20at%207.22.22%20PM.png',
+            6: 'https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png'
+        },
+        
+        'choppedImages': {
+            1: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_mabPApHXmgOD_xHUA_cqvx_-w9vmMh67y970BLOja0crQYie3W_2nbZ9A7XNf4J5MPZkLFFvGk4Hc5zBeP5obtUEeXWNNLuqTh4Cq0QixH7NWd6sD3X5VomfraNlvkwpI3vSmHjnfNUTmOTBAuwd2W_-9HWkxif0JyP_pPncrAzpRGcOTvJPKXSJylnW/s320/Screen%20Shot%202024-05-01%20at%207.22.27%20PM.png',
+            2: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge8q5A6E_LkSNTC-8LGSVONVZuFx0XF22iRJAkjdJVyH6OLvvninO830o3rjxSZmMH4d9awg2VKyMf31uxbJANhyyT5CbdzQ1Mwiy78ppTJm4kmoeFTpcWbv-QYxMYYSwNdLIsn90tEdv8UC0pGoNIeNlpFeaaBDyMVi79Zhjttufe2ib49ocFwVFDVt3t/s320/Screen%20Shot%202024-05-01%20at%207.22.30%20PM.png',
+            3: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUyiek9SMOHNwy668vqEWkAk0QYVi0EYLnl_3ykVfygg320E_4roaHXW6Ny02viX7o_AE-1z7VrZf6nElMelPpWEcQNvhnj0MOm05NMNZIGXpUepKqH89EULuRg7N0k9NIp3eN9q96SY00ZI3sZb3mUlBu9WrrMtjzdUqv7auORWFczHi9fTU-fe1U9f3A/s320/Screen%20Shot%202024-05-01%20at%207.22.33%20PM.png',
+            4: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZwhKATGFtMAhLWomITr5qcMf8qXTmTpJzWY1zphfLuh48gz48Zbyh2OgZk9vZmLJAzJ5xX88GVbBweuHbtZAZBP1ex3LfQr40re_ao5IQRU-rjNeO2aSC_o0daPDS2gvNiUgYdEfQevXPXMhUssbOGsylUqZjfQ_GxY7gEaA9vhro2qxeFRoTZjYeITvE/s320/Screen%20Shot%202024-05-01%20at%207.22.39%20PM.png',
+            5: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho4Ii21flDdETFiEL9KxhwB0AxvpRmmFKum-bxDf3W4jrzg4IBBjFP8zVbZu3sati5tgL7K78usxiQMovHNwFNkkyDhOXr3zFP8C8P2QqdeZEFDJuSUIQfe-Ot0_fAb4xF0CXPM15BZMofMNA2a_EPdCmlX671ZPJNQYPRTEbQhG-RcCULh13AdC1dtz_E/s320/Screen%20Shot%202024-05-01%20at%207.22.51%20PM.png'        }
+    },
     3: {
         'name': 'Garlic Scallion Ramen',
         'images': {
@@ -401,7 +419,7 @@ cooking_mama = {
             2: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQXBFyy-z-WbXgBrOZMLI4opUlEI-Lbv5e78SYKiEa8W1DlHNl4C4Aud7_NBWIsESpUa7Tmht9YwpOdv-Egn1QCdqlBlXDuet1L5xWwhD66ca58DxVlD5aw9X5gxoDzGNF-DSh420v1KPJi2Pysrbs403peO18oz4lFycwGlZQrRvakH9wbigjrwoAlduF/s1600/Screen%20Shot%202024-04-29%20at%201.36.11%20AM.png',
             3: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGqTzegePkHBJRQ-g65J3L6iUQ_EMlMF-r1M0yWfAb_C6qMEXqCZUa2d8-gTdXpTmTuzlx5TEnfVvgQIScl9DZfslY94L950SS9Iv8NjIWhNG8oQFeu3epnCWhidoA6X9q3XywoXkTflzktyHayLNUdQRoBmxiFedEcLBgAAW5L4_uShrr1rn2_R2zpwZq/s1600/Screen%20Shot%202024-04-29%20at%201.36.12%20AM.png',
             4: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq1-lqok5-DdO5OcO9J-mNNdT-o8kd4gGpdIMEyKXxKyEl5aoPJkjdn9OpKwvKOfpRZjNLKmgbogPIX-w7X63Cv8Zee5E6qmJD8RfMWSU4oNI4n9wY7fBCghZ4DXmUz2ctnxP3ux_PRg37YkOGSqgDxAS9kP38IDY_z-NFbSerfEp8IUkqVMU7L3TjcJA3/s1600/Screen%20Shot%202024-04-29%20at%201.36.16%20AM.png',
-            5: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRFRYOJ8C5_SfPmbzxy1yammksa-4k0Spu1LSk6XeSnqUrQs_Yx3a8VoSMkqoi9ISXpIIpFP9B60Zlm5YHRNOsHNLOLYyZJlMXtl8saN-B7x89GYEyRtqJLdPhWsStfcByo8O4G9h1oQQjISSAly4xynNXeRD40-RNmQSY3Tf81YVMWTJIzI9lkLv6hHgv/s320/Screen%20Shot%202024-04-29%20at%201.36.18%20AM.png',
+            5: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZwhKATGFtMAhLWomITr5qcMf8qXTmTpJzWY1zphfLuh48gz48Zbyh2OgZk9vZmLJAzJ5xX88GVbBweuHbtZAZBP1ex3LfQr40re_ao5IQRU-rjNeO2aSC_o0daPDS2gvNiUgYdEfQevXPXMhUssbOGsylUqZjfQ_GxY7gEaA9vhro2qxeFRoTZjYeITvE/w246-h239/Screen%20Shot%202024-05-01%20at%207.22.39%20PM.png',
             6: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid5MeE7lS9Y4BYsCKyaQyDxj6-xHGLRAzZNlNuxdYQ14_Fuv-HA6nxlfYplAXnw_G05bDlb32O2ciMULKv04imHEvdD3JoboicFTvGtY-mqCc4LVeNj-gVdgG_TuUckIW7W4RMAGSdHyVGKhR9iFJFRb1aelD-g1NlnNpBdhHzOl7Tv5VkVKleoOxs_VDT/s320/Screen%20Shot%202024-04-30%20at%2012.04.09%20AM.png'
         }
     }

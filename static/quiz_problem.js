@@ -52,11 +52,16 @@ function checkCurrentDroppedItem(correctResponse){
 function createResponse(responseType){
     let responseParent = $(`<div id=quiz-response></div>`);
     let responseForm = $(`<form id="quiz-response-form"></form>`)
+
     if(responseType === 'dl'){
-        let submitButton = $(`<button id="cooking-mama-button" type="submit">Finished Chopping!</button>`);
-        // responseForm.append(submitButton);
-        responseParent.append(submitButton)
+        let submitButton = $(`<br> <div class = "button-container">
+        <button id="quiz-next-button" class="navbar-link" type="submit">Finished Chopping!</button>
+        </div>`);
+        // $(`<button id="cooking-mama-button" type="submit">Finished Chopping!</button>`);
+        responseForm.append(submitButton);
+        responseParent.append(responseForm)
     }
+
     else if(responseType === 'ul'){
         let responsesDict = problem['responses']
         Object.keys(responsesDict).forEach(function(key){
@@ -83,6 +88,7 @@ function createResponse(responseType){
 }
 
 let mama_score = 1.0;
+let currChopped = 0.0;
 function createChopping(problem) {
     // Check if the prompt matches a specific string
     if (problem.q_type === 'chop') {
@@ -102,8 +108,7 @@ function createChopping(problem) {
         // Append the knife element to the questions-container div
         game_container.appendChild(knifeElement);
         let currScallion = 1;
-        let currChopped = 0;
-
+        
         // Get the scallion image element
         let scallionElement = document.createElement('img');
         scallionElement.id = 'scallion';
@@ -162,45 +167,10 @@ function createChopping(problem) {
             }
         });
 
-        $(document).on('click', '#cooking-mama-button', function(event){
-            event.preventDefault(); // Prevent default button click behavior
-            
-            let selectedResponse = parseInt($('input[name="response"]:checked').val());
-            let correctResponse = parseInt(problem['correct_response']);
-            if (currChopped !== Object.keys(cooking_mama[quizId]['choppedImages']).length) {
-                    alert("Nope, there's still more to chop! Keep going (-0.2 pts)");
-                    mama_score -= 0.2; 
-            }
-            else {
-                $.ajax({
-                    type: 'POST',
-                    url: window.location.href,
-                    dataType: 'json',
-                    contentType: 'application/json; charset=utf-8',
-                    data: JSON.stringify({'point': mama_score}),
-                    success: function(result){
-                        let nextProblem = parseInt(problemId) + 1;
-                        console.log("ajax point", mama_score)
-                        if (nextProblem <= totalProblems) {
-                            window.location.href = `/test_recipe/${quizId}/problems/${nextProblem}`;
-                        } else {
-                            window.location.href = `/test_recipe/${quizId}/score`;
-                        }
-                    },
-                    error: function(request, status, error){
-                        console.log("Error occurred:");
-                        console.log(request);
-                        console.log(status);
-                        console.log(error);
-                    }
-                });
-            }
-        });
     }
 }
 
 $(function() {
-
     if (typeof dragItems !== 'undefined' && dragItems && typeof dropImage !== 'undefined' && dropImage) {
         console.log("Draggable problem");
         createDraggableProblem(problem, dragItems, dropImage);
@@ -210,43 +180,50 @@ $(function() {
         createChopping(problem);
     }
 
-
-
-    $('#quiz-response-form').on('submit', function(event){
+    $('#quiz-response-form').on('submit', function(event) {
         event.preventDefault();
+        console.log("A button was pressed for the quiz");
 
-        let nextProblem = parseInt(problemId)+1;
+        let nextProblem = parseInt(problemId) + 1;
         let point = { 'point': 0 };
 
-        if(problem['response_type'] === 'ul'){
+        if (problem['response_type'] === 'ul') {
             let selectedResponse = parseInt($('input[name="response"]:checked').val()); // Safely get the value
             let correctResponse = parseInt(problem['correct_response']);
-            point['point'] = selectedResponse === correctResponse ? 1 : 0;
-        } else if(problem['response_type'] === 'drag'){
+            point['point'] = (selectedResponse === correctResponse) ? 1 : 0;
+            console.log("In MCQ if");
+        } else if (problem['response_type'] === 'drag') {
             point['point'] = points;
+            console.log("In drag if");
+        } else if (problem['response_type'] === 'dl') {
+            point['point'] = mama_score;
         }
-        if (problem['response_type'] === 'ul' || problem['response_type'] === 'drag'){
+
+        if (problem['response_type'] === 'dl' && currChopped !== Object.keys(cooking_mama[quizId]['choppedImages']).length) {
+            console.log("going to send alert")
+            alert("Nope, there's still more to chop! Keep going (-0.2 pts)");
+            mama_score -= 0.2;
+        } else {
+            console.log("otherwise")
             $.ajax({
                 type: 'POST',
                 url: window.location.pathname,
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',
                 data: JSON.stringify(point),
-                success: function(result){
+                success: function(result) {
                     console.log('Redirecting to next problem:', nextProblem);
 
-                    if(nextProblem <= totalProblems) {
+                    if (nextProblem <= totalProblems) {
                         window.location.href = `/test_recipe/${quizId}/problems/${nextProblem}`;
                     } else {
                         window.location.href = `/test_recipe/${quizId}/score`;
                     }
-
-                }, error: function(request, status, error){
+                },
+                error: function(request, status, error) {
                     console.error("Error on AJAX call:", error);
                 }
             });
         }
-
-        
     });
 });
