@@ -369,10 +369,45 @@ quiz_data = {
                 },
                 'correct_response': [1, 2, 3],
                 'response_type': 'drag'
+            },
+            5: {
+                'q_type': 'chop',
+                'prompt': 'Drag the knife to the scallion to chop it. When you think its been fully chopped, click the button!',
+                'responses': {
+                    1: 'Fun fact: scallions are also called green onions!',
+                },
+                'correct_response': 1,
+                'response_type': 'dl'
             }
         }
     }
 }
+
+cooking_mama = {
+    3: {
+        'name': 'Garlic Scallion Ramen',
+        'images': {
+            1: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSiCh7Qtqdai9pm6EbLPgVFq8yF6IVP0tQCsoNnLBcBKq2H7JhXOaKzCYBufSKgYoPaFzuowJMVQpgc4LFi8XeNsJy6rIKq-1GfhSpiasu_SBcdIeUCCPOJNRWVuBFusi46gKCGIJKht3hy6YibGNH2a-qPahaOnkeqCoWPrz7rJ0lm3R3c8df70wGwS9J/s320/Screen%20Shot%202024-04-29%20at%201.30.09%20AM.png',
+            2: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEithQJCZaKY4FkbVldJGo5gtpMDkhgVpOtolmD71HqLoqoU_-KCAvAHnKQeeqwQ9bsoGllke2LIaTCbD0aWaZYco0hskm6z4z_WUAzp7fuJlkVoPbnOf3OT9-QBk6CPbbKI6CUtNQrgHygSyOtTIz9FX-s7JAlzHKSW3m0ztDN3fGpVi9vbzWNKAU4HoSwP/s320/Screen%20Shot%202024-04-29%20at%201.30.14%20AM.png',
+            3: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqYXZo5bYx22Vc_nQZ8Mnj4CMHtzJMVErSn983sEY3b77d-UnQ8djKV5C34IGhcJ_FT66ynZhZc1dO8Bfn9RfeZevqpj4iMR2MsQaLz7O4RDZBl9F4mpi0IfAV_74-1MThgQp3MTroTb_Er0iAKxhT9JNr889YX2GrxooCe-ZyfTzNLOoO83D6Sg1ssxIF/s320/Screen%20Shot%202024-04-29%20at%201.30.19%20AM.png',
+            4: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhICiS6iiHlGZLWn0LuqIdeHDFamA53nVk7OLoRDvObaI9g5lSRmIV5d7SSp0RBDWmSTS1ofexKhe5xuwigvoyxNeYCs0cx58ueR7WxChckygm5A4v_-15K1VFRBMaQuquRfiSSv9dNv0CEHKRDfko9xjnv8ial_XPYKY-uUHxkxYU2OJXSQaVqXQDwQubv/s320/Screen%20Shot%202024-04-29%20at%201.30.21%20AM.png',
+            5: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIVzNgJPx7aCUT-l8T3zHT4cGLmeA3fZgqOTQaFNhdB1lH1zgIFLyvEs71OvbQrM-gGc-ks4SK5MW_au7uBBL7bC4pnR04A7iI6rus5UhTjz4O6SB1fXVmD0yluLxvrw3hhcU_rT2UMIYP-yO1kDQ_FaPHEow9brfLBbLaIwuXzbucwsI2P3C1bkyMb_MT/s320/Screen%20Shot%202024-04-29%20at%201.30.23%20AM.png',
+            6: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEie-tu73vlZdcj0AraZeSqzv5IJVY2eKyC35XmJLU9qRkeftGaO0NLTNviHWhSaltMAEGTWLC7fTP6ocZSeAeoK3qUdZyZCfqGGVFoVtjuBjaLiPaHImm_x_ingqroFiSOYb4QWm4WcGquMmJLjbWFDh8pgfv-fcUl5-gZruCmWWQBmg5f5XEhmkWr_wv4B/s1600/Screen%20Shot%202024-04-29%20at%201.30.26%20AM.png',
+            7: 'https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png'
+        },
+        
+        'choppedImages': {
+            1: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMOUev3k_8GGu651GiXbfn9UKfKGRUL8G37_k9PIqZ4NK9XCtwV9dM2bqI-r2Iy1j3AIbtYSSGQp3dx0c8e5bNrkGqqWUWU0iikif-fcLXvdUpYGxCifgxyb2t5Onk1KHixtxRYa4Q-7NOe2nM0eTqFpHTJBoYHgT7yfzSwVwe3wFE4LrWxc7_7toKe8wj/s1600/Screen%20Shot%202024-04-29%20at%201.36.09%20AM.png',
+            2: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQXBFyy-z-WbXgBrOZMLI4opUlEI-Lbv5e78SYKiEa8W1DlHNl4C4Aud7_NBWIsESpUa7Tmht9YwpOdv-Egn1QCdqlBlXDuet1L5xWwhD66ca58DxVlD5aw9X5gxoDzGNF-DSh420v1KPJi2Pysrbs403peO18oz4lFycwGlZQrRvakH9wbigjrwoAlduF/s1600/Screen%20Shot%202024-04-29%20at%201.36.11%20AM.png',
+            3: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGqTzegePkHBJRQ-g65J3L6iUQ_EMlMF-r1M0yWfAb_C6qMEXqCZUa2d8-gTdXpTmTuzlx5TEnfVvgQIScl9DZfslY94L950SS9Iv8NjIWhNG8oQFeu3epnCWhidoA6X9q3XywoXkTflzktyHayLNUdQRoBmxiFedEcLBgAAW5L4_uShrr1rn2_R2zpwZq/s1600/Screen%20Shot%202024-04-29%20at%201.36.12%20AM.png',
+            4: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq1-lqok5-DdO5OcO9J-mNNdT-o8kd4gGpdIMEyKXxKyEl5aoPJkjdn9OpKwvKOfpRZjNLKmgbogPIX-w7X63Cv8Zee5E6qmJD8RfMWSU4oNI4n9wY7fBCghZ4DXmUz2ctnxP3ux_PRg37YkOGSqgDxAS9kP38IDY_z-NFbSerfEp8IUkqVMU7L3TjcJA3/s1600/Screen%20Shot%202024-04-29%20at%201.36.16%20AM.png',
+            5: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRFRYOJ8C5_SfPmbzxy1yammksa-4k0Spu1LSk6XeSnqUrQs_Yx3a8VoSMkqoi9ISXpIIpFP9B60Zlm5YHRNOsHNLOLYyZJlMXtl8saN-B7x89GYEyRtqJLdPhWsStfcByo8O4G9h1oQQjISSAly4xynNXeRD40-RNmQSY3Tf81YVMWTJIzI9lkLv6hHgv/s320/Screen%20Shot%202024-04-29%20at%201.36.18%20AM.png',
+            6: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid5MeE7lS9Y4BYsCKyaQyDxj6-xHGLRAzZNlNuxdYQ14_Fuv-HA6nxlfYplAXnw_G05bDlb32O2ciMULKv04imHEvdD3JoboicFTvGtY-mqCc4LVeNj-gVdgG_TuUckIW7W4RMAGSdHyVGKhR9iFJFRb1aelD-g1NlnNpBdhHzOl7Tv5VkVKleoOxs_VDT/s320/Screen%20Shot%202024-04-30%20at%2012.04.09%20AM.png'
+        }
+    }
+}
+
+
 
 score = 0.0
 
@@ -422,7 +457,7 @@ def quiz_problem(quiz_id: int, problem_id: int):
         return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
 
     return render_template('quiz_problem.html', id=quiz_id, problem_id=problem_id, problem=problem,
-                           total_problems=len(quiz_info['problems']), drag_items=drag_items, drop_image=drop_image)
+                           total_problems=len(quiz_info['problems']), drag_items=drag_items, drop_image=drop_image, cooking_mama=cooking_mama)
 
 
 @app.route('/score', methods=['GET', 'POST'])
