@@ -287,18 +287,18 @@ quiz_data = {
                     2: '4',
                     3: 'trick question, 1',
                 },
-                'correct_response': 1,
+                'correct_response': 3,
                 'response_type': 'ul'
             },
             3: {
                 'q_type': 'mcq',
-                'prompt': 'How much time do you roast the squash for the last step',
+                'prompt': 'How much time do you roast the squash for after flipping it?',
                 'responses': {
                     1: '5 minutes',
                     2: '20 minutes',
                     3: 'however amount of time its takes for the sugar to be golden',
                 },
-                'correct_response': 1,
+                'correct_response': 2,
                 'response_type': 'ul'
             },
 
