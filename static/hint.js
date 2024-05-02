@@ -1,7 +1,7 @@
 function displayHint(hintID, hint){
+    let hints = [displayHintOne(), displayHintTwo(), displayHintThree(), displayHintFour()];
     $('.subtitle').append(`${hint['name']}`);
-    if(hintID===0){
-    }
+    $('#hint-container').append(hints[hintID]);
 }
 
 function displayHintOne(){
