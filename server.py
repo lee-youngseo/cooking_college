@@ -374,6 +374,83 @@ quiz_data = {
     }
 }
 
+hint_data = {
+    0: {
+        'name': 'Draining Options',
+        'recipe_id': '3',
+        'steps': {
+            1: {
+                'instructions': 'Empty a pot into a colander held in the sink.',
+                'img': 'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FEdit%2Fshutterstock_1781025173'
+            },
+            2: {
+                'instructions': 'Cover the pot with a lid and open slightly as you ',
+                'img': 'https://qph.cf2.quoracdn.net/main-qimg-ced01ea966c6ef0272ac200ad151b7a2-lq'
+            },
+            3: {
+                'instructions': 'Pour the water out carefully, with no cover, as to not let all the noodles spill out.',
+                'img': 'https://content.api.news/v3/images/bin/f255ac556d14a7ac610ad6c51f565322'
+            }
+        }
+    },
+    1: {
+        'name': 'Mincing Garlic',
+        'recipe_id': '3',
+        'img': 'https://www.deliciousmeetshealthy.com/wp-content/uploads/2020/03/Process-Shots-how-to-mince-garlic.jpg',
+        'steps': {
+            1: 'Lay a clove flat on your cutting board and trim away the root end with the tip of your knife. Lay the flat side of your knife over the clove while holding the handle. With the heel of your other hand, carefully give your knife a gentle whack',
+            2: 'Cut each clove into 4 or 5 pieces or slices',
+            3: 'Turn the garlic cloves, cutting the pieces into 4 slices again.',
+            4: 'Move your knife from left to right and back again, until the garlic is first finely chopped and then minced.',
+        }
+    },
+    2: {
+        'name': 'Cutting Avocados',
+        'recipe_id': '1',
+        'steps': {
+            1: {
+                'instructions': 'Cut it in half, lengthwise',
+                'img': 'https://images.wsj.net/im-148170/square',
+
+            },
+            2: {
+                'instructions': 'Gently twist the halves apart',
+                'img': 'https://toriavey.com/images/2014/01/Avocado-3-292x219.jpg'
+            },
+            3: {
+                'instructions': 'Use a knife to firmly whack the seed. Gently turn the knife and pull– the seed should come out',
+                'img': 'https://www.savorythoughts.com/wp-content/uploads/2022/07/How-To-Cut-An-Avocado-Savory-Thoughts-4.jpg'
+
+            },
+            4: {
+                'instructions': 'Peel off the skin and then cut as desired',
+                'img': 'https://www.bhg.com/thmb/4pykRKlyKx7aPN8rTZsaD7nyhoo=/1919x0/filters:no_upscale():strip_icc()/peeling-skin-off-avocado-7jRJDOFwaEbBhISHkFlt83-e5f0be859df04996ab17365c2e326310.jpg'
+
+            },
+        }
+    },
+    3: {
+        'name': 'Microwave-Safe Dishes',
+        'recipe_id': '1',
+
+        'safe': ['Glass dishes', 'Ceramic dishes', 'Plastic dishes'],
+        'unsafe': ['Styrofoam', 'Cardboard', 'Metals, stainless steel, foil', 'Single-use plastics, to-go containers']
+    },
+    4: {
+        'name': 'Preheating an Oven',
+        'recipe_id': '2',
+        'steps': {
+            1: {
+                'instructions': 'If you have an electric oven, you can set the oven to the desired temperature and it will ding when ready',
+                'img': 'https://www.pcrichard.com/dw/image/v2/BFXM_PRD/on/demandware.static/-/Sites-pcrichard-master-product-catalog/default/dw94bbe4aa/images/hires/Z_WFE775H0HZ.jpg?sw=800&sh=800&sm=fit'
+            },
+            2: {
+                'instructions': 'But gas ovens do not alert you when the temperature is reached. For these ovens wait 15-20 min after setting the temperature',
+                'img': 'https://mobileimages.lowes.com/productimages/1c380e57-3c07-4711-a037-46f5ba183592/49870314.jpg'
+            }
+        }
+    },
+}
 score = 0.0
 
 
@@ -448,7 +525,7 @@ def quiz_score(quiz_id):
 
 @app.route('/hints')
 def hints():
-    return render_template('hints.html')
+    return render_template('hint.html')
 
 
 @app.route('/get_recipes', methods=['GET'])
@@ -494,6 +571,14 @@ def instructions(recipe_id):
 @app.route('/get_instructions/<recipe_id>', methods=['GET'])
 def get_instructions(recipe_id):
     return jsonify(recipe_data[recipe_id]['instructions'])
+
+@app.route('/helpful_hints')
+def helpful_hint_start(hint_id):
+    return render_template('hint_start.html', hints=hint_data)
+
+@app.route('/helpful_hints/<hint_id>')
+def helpful_hint(hint_id):
+    return render_template('hint.html', hint_id=hint_id, )
 
 
 if __name__ == '__main__':

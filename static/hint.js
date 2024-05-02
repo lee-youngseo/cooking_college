@@ -1,0 +1,7 @@
+function displayHint(){
+
+}
+
+$(function(){
+
+})
