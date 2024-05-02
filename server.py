@@ -530,7 +530,7 @@ def hints_start():
 
 @app.route('/hints/<hint_id>')
 def helpful_hint(hint_id):
-    return render_template('hint.html', hint_id=hint_id, hint=hint_data[hint_id])
+    return render_template('hint.html', hint_id=int(hint_id), hint=hint_data[int(hint_id)])
 
 
 

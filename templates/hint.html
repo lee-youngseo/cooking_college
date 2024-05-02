@@ -2,10 +2,14 @@
 
 {% block content %}
 
-<script src="{{url_for('static', filename='hints.js')}}"></script>
+    <script src="{{url_for('static', filename='hint.js')}}"></script>
+    <script>
+        let hintID = {{ hint_id|tojson }};
+        let hint = {{ hint|tojson }};
+    </script>
 
-<div class="subtitle lilac">Here are some helpful hints!</div>
-<br>
-<div class="row" id="hints_container"></div>
+    <div class="subtitle lilac"></div>
+    <br>
+    <div class="row" id="hints_container"></div>
 
 {% endblock %}
