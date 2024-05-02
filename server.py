@@ -268,15 +268,16 @@ quiz_data = {
         'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/01/Coconut-Acorn-Squash_exps149543_TH132767C04_25_1bC_RMS.jpg',
         'problems': {
             1: {
-                'q_type': 'mcq',
-                'prompt': 'What is the ingredient that makes the squash sweet?',
+                'q_type': 'drag',
+                'prompt': 'What should the squash look like when putting it in the oven? Drag the correct state of squash to the oven.',
+                'prompt_image': 'https://image-us.samsung.com/SamsungUS/dacor/products/cooking/built-in-oven/dob30t977ss/mobile/1-Product-DOB30T977SS-PLP-Mobile.png?$DC_290_232_PNG$',
                 'responses': {
-                    1: 'White Sugar',
-                    2: 'Cocoa Powder',
-                    3: 'Brown Sugar',
+                    '1': 'https://www.pngarts.com/files/11/Acorn-Squash-PNG-Photo.png',
+                    '2': 'https://png.pngtree.com/png-clipart/20210829/original/pngtree-pumpkin-crop-planting-nutritious-fruit-png-image_6673485.jpg',
+                    '3': 'https://seedstosuccess.com/wp-content/uploads/2022/11/Roasted-Acorn-Squash-e1669839645107-276x300.png'
                 },
-                'correct_response': 3,
-                'response_type': 'ul'
+                'correct_response': [3],
+                'response_type': 'drag'
             },
             2: {
                 'q_type': 'mcq',
@@ -345,17 +346,6 @@ quiz_data = {
                 'response_type': 'ul'
             },
             3: {
-                'q_type': 'mcq',
-                'prompt': 'What does the sauce consist of?',
-                'responses': {
-                    1: 'Soy sauce, peanut butter, garlic, and scallions',
-                    2: 'Soy sauce, peanut butter, and garlic',
-                    3: 'Soy sauce, garlic, and scallions',
-                },
-                'correct_response': 1,
-                'response_type': 'ul'
-            },
-            4: {
                 'q_type': 'drag',
                 'prompt': 'Drag all the ingredients you need for the sauce into the bowl',
                 'prompt_image': 'https://www.heathceramics.com/cdn/shop/products/large-serving-bowl-opaque-white-heath-ceramics_108-05.jpg',
@@ -370,7 +360,7 @@ quiz_data = {
                 'correct_response': [1, 2, 3],
                 'response_type': 'drag'
             },
-            5: {
+            4: {
                 'q_type': 'chop',
                 'prompt': 'Drag the knife to the scallion to chop it. When you think its been fully chopped, click the button!',
                 'responses': {
