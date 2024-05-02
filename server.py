@@ -295,7 +295,7 @@ quiz_data = {
             },
             3: {
                 'q_type': 'drag',
-                'prompt': 'How much time do you roast the squash for after flipping it? Drag the correct timer to the squash',
+                'prompt': 'For how much time do you roast the squash after flipping it? Drag the correct timer to the squash',
                 'prompt_image': 'https://www.foodandwine.com/thmb/Q-4ciItjPFjSSQrUnHjt_TelVAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/brown-sugar-roasted-acorn-squash-recipe-FT-BLOG1019-f14d448c609a4c09b595baa6fe04d7ec.jpg',
                 'responses': {
                     '1': 'https://png.pngtree.com/png-clipart/20230813/original/pngtree-icon-symbolizing-clock-and-timer-for-measuring-15-minutes-of-time-passage-vector-picture-image_10530824.png',
@@ -330,15 +330,18 @@ quiz_data = {
         'image': 'https://www.kitchentreaty.com/wp-content/uploads/2020/01/super-simple-miso-ramen-5-420x560.jpg',
         'problems': {
             1: {
-                'q_type': 'mcq',
-                'prompt': 'For how long should you cook the noodles?',
+                'q_type': 'drag',
+                'prompt': 'For how long should you cook the noodles? Drag the correct instructions to the pot!',
+                'prompt_image': 'https://recipes.net/wp-content/uploads/2023/12/how-to-cook-perfect-spaghetti-noodles-1701663956.jpg',
                 'responses': {
-                    1: '3 minutes',
-                    2: '1 minute',
-                    3: 'the package instructions',
+                    '1': 'https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-icon-of-a-clock-and-timer-indicating-the-passage-of-30-seconds-vector-png-image_32606746.png',
+                    '2': 'https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-icon-representing-the-passage-of-time-clock-and-timer-set-for-5-minutes-vector-png-image_32606752.png',
+                    '3': 'https://qph.cf2.quoracdn.net/main-qimg-966ad16a2753b04f467252c85724ca0a.webp',
                 },
-                'correct_response': 3,
-                'response_type': 'ul'
+                'correct_response': [3],
+                'response_type': 'drag',
+                'points': 1
+
             },
             2: {
                 'q_type': 'mcq',
@@ -353,13 +356,13 @@ quiz_data = {
             },
             3: {
                 'q_type': 'drag',
-                'prompt': 'Drag all the ingredients you need for the sauce into the bowl',
+                'prompt': 'Drag the ingredients used for the sauce into the bowl',
                 'prompt_image': 'https://www.heathceramics.com/cdn/shop/products/large-serving-bowl-opaque-white-heath-ceramics_108-05.jpg',
                 'responses': {
                     '1': 'https://media.wegetanystock.co.uk/brandbank/images/8715035150102/1',
                     '2': 'https://cdn.gardengrocer.com/attachments/photos/high_res/395.png?9340',
                     '3': 'https://i.pinimg.com/originals/cf/95/f7/cf95f7a9a402160e883887b882107745.png',
-                    '4': 'https://static.vecteezy.com/system/resources/previews/027/216/058/original/garlic-garlic-garlic-transparent-background-ai-generated-free-png.png',
+                    '4': 'https://www.pngmart.com/files/23/Milk-Carton-PNG-Transparent.png',
                     '5': 'https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png',
                     '6': 'https://png.pngtree.com/png-vector/20221123/ourmid/pngtree-fresh-fruit-cut-lemon-png-image_6153348.png'
                 },
