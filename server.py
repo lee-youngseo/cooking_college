@@ -210,16 +210,17 @@ quiz_data = {
         'image': 'https://www.tasteofhome.com/wp-content/uploads/2018/06/Greek-Brown-and-Wild-Rice-Bowls_EXPS_SDAS18_204870_C03_28__10b-3.jpg',
         'problems': {
             1: {
-                'q_type': 'mcq',
-                'prompt': 'For how long do you have to microwave the precooked rice?',
-                'image': 'https://www.marthastewart.com/thmb/R5e-wnZBjNbvQiYmd1CtBQTFcVY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/924877_master-recipe-brown-rice-05-13126d75658249b48e7c9ac32d180ab2.jpg',
+                'q_type': 'drag',
+                'prompt': 'For how long do you have to microwave the precooked rice? Drag the correct timer to the microwave!',
+                'prompt_image': 'https://cdn.standardmedia.co.ke/evemedia/eveimages/friday/thumb_how_to_cook_rice_in_5a740518774e1.jpg',
                 'responses': {
-                    1: '2 minutes',
-                    2: '30 seconds',
-                    3: '5 minutes',
+                    '1': 'https://png.pngtree.com/png-vector/20220912/ourmid/pngtree-vector-two-minutes-icon-minutes-single-meter-vector-png-image_14498820.png',
+                    '2': 'https://png.pngtree.com/png-vector/20220524/ourmid/pngtree-five-minutes-stopwatch-symbol-illustration-isolated-vector-png-image_13637774.png',
+                    '3': 'https://png.pngtree.com/png-clipart/20230804/original/pngtree-fifteen-minutes-stopwatch-alarm-background-countdown-vector-picture-image_9508599.png',
                 },
-                'correct_response': 1,
-                'response_type': 'ul'
+                'correct_response': [1],
+                'response_type': 'drag',
+                'points': 1
             },
             2: {
                 'q_type': 'chop',
@@ -259,7 +260,8 @@ quiz_data = {
                     '6': 'https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-colorful-plastic-cups-and-plates-isolated-png-image_10225358.png'
                 },
                 'correct_response': [1, 2, 6],
-                'response_type': 'drag'
+                'response_type': 'drag',
+                'points': 3
             }
         },
     },
@@ -277,7 +279,8 @@ quiz_data = {
                     '3': 'https://seedstosuccess.com/wp-content/uploads/2022/11/Roasted-Acorn-Squash-e1669839645107-276x300.png'
                 },
                 'correct_response': [3],
-                'response_type': 'drag'
+                'response_type': 'drag',
+                'points': 1
             },
             2: {
                 'q_type': 'mcq',
@@ -291,15 +294,17 @@ quiz_data = {
                 'response_type': 'ul'
             },
             3: {
-                'q_type': 'mcq',
-                'prompt': 'How much time do you roast the squash for after flipping it?',
+                'q_type': 'drag',
+                'prompt': 'How much time do you roast the squash for after flipping it? Drag the correct timer to the squash',
+                'prompt_image': 'https://www.foodandwine.com/thmb/Q-4ciItjPFjSSQrUnHjt_TelVAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/brown-sugar-roasted-acorn-squash-recipe-FT-BLOG1019-f14d448c609a4c09b595baa6fe04d7ec.jpg',
                 'responses': {
-                    1: '5 minutes',
-                    2: '20 minutes',
-                    3: 'however amount of time its takes for the sugar to be golden',
+                    '1': 'https://png.pngtree.com/png-clipart/20230813/original/pngtree-icon-symbolizing-clock-and-timer-for-measuring-15-minutes-of-time-passage-vector-picture-image_10530824.png',
+                    '2': 'https://png.pngtree.com/png-vector/20220518/ourmid/pngtree-icon-for-passage-of-time-clock-and-timer-displaying-20-minutes-vector-png-image_35564356.png',
+                    '3': 'https://png.pngtree.com/png-clipart/20230813/original/pngtree-icon-of-a-clock-and-timer-representing-the-passage-of-time-for-45-seconds-vector-picture-image_10530833.png',
                 },
-                'correct_response': 2,
-                'response_type': 'ul'
+                'correct_response': [2],
+                'response_type': 'drag',
+                'points': 1
             },
 
             4: {
@@ -315,7 +320,8 @@ quiz_data = {
                     '6': 'https://waterbutlers.com/cdn/shop/products/Screen-Shot-2019-10-19-at-10.26.32-PM_692x.png'
                 },
                 'correct_response': [1, 3, 6],
-                'response_type': 'drag'
+                'response_type': 'drag',
+                'points': 3
             }
         }
     },
@@ -358,7 +364,8 @@ quiz_data = {
                     '6': 'https://png.pngtree.com/png-vector/20221123/ourmid/pngtree-fresh-fruit-cut-lemon-png-image_6153348.png'
                 },
                 'correct_response': [1, 2, 3],
-                'response_type': 'drag'
+                'response_type': 'drag',
+                'points': 3
             },
             4: {
                 'q_type': 'chop',

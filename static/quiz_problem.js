@@ -33,16 +33,16 @@ function setupDragAndDrop(){
             droppedItems[key] = true;
             currentDroppedItem = key;
             if (checkCurrentDroppedItem(problem['correct_response'])){
-                if (problem['prompt'] === 'What should the squash look like when putting it in the oven? Drag the correct state of squash to the oven.'){
+                if (problem['points'] === 1){
                     points = points + 1;
-                } else {
+                } else  if (problem['points'] === 3){
                     points = points + 1/3; 
                 }
                 draggable.draggable('disable');
             } else {
-                if (problem['prompt'] === 'What should the squash look like when putting it in the oven? Drag the correct state of squash to the oven.'){
+                if (problem['points'] === 1){
                     points = points - 1;
-                } else {
+                } else  if (problem['points'] === 3){
                 points = points - 1/3 
                 }
                 alert("Incorrect item dropped");
