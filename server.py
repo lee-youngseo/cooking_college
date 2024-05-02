@@ -524,8 +524,14 @@ def quiz_score(quiz_id):
 
 
 @app.route('/hints')
-def hints():
-    return render_template('hint.html')
+def hints_start():
+    return render_template('hint_start.html', hints=hint_data)
+
+
+@app.route('/hints/<hint_id>')
+def helpful_hint(hint_id):
+    return render_template('hint.html', hint_id=hint_id, hint=hint_data[hint_id])
+
 
 
 @app.route('/get_recipes', methods=['GET'])
@@ -571,14 +577,6 @@ def instructions(recipe_id):
 @app.route('/get_instructions/<recipe_id>', methods=['GET'])
 def get_instructions(recipe_id):
     return jsonify(recipe_data[recipe_id]['instructions'])
-
-@app.route('/helpful_hints')
-def helpful_hint_start(hint_id):
-    return render_template('hint_start.html', hints=hint_data)
-
-@app.route('/helpful_hints/<hint_id>')
-def helpful_hint(hint_id):
-    return render_template('hint.html', hint_id=hint_id, )
 
 
 if __name__ == '__main__':

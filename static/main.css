@@ -184,3 +184,12 @@
     height: auto; /* Maintain the aspect ratio */
     display: flex;
 }
+
+#hints-container{
+    width: 100%;
+}
+#hint-items{
+    margin: auto;
+    font-size: 16px;
+    list-style-type: none;
+}
