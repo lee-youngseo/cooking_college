@@ -381,15 +381,18 @@ hint_data = {
         'steps': {
             1: {
                 'instructions': 'Empty a pot into a colander held in the sink.',
-                'img': 'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FEdit%2Fshutterstock_1781025173'
+                'img': 'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FEdit%2Fshutterstock_1781025173',
+                'alt': 'Person emptying a pot full of noodles into a colander placed in a sink.',
             },
             2: {
                 'instructions': 'Cover the pot with a lid and open slightly as you ',
-                'img': 'https://qph.cf2.quoracdn.net/main-qimg-ced01ea966c6ef0272ac200ad151b7a2-lq'
+                'img': 'https://qph.cf2.quoracdn.net/main-qimg-ced01ea966c6ef0272ac200ad151b7a2-lq',
+                'alt': 'Person emptying'
             },
             3: {
                 'instructions': 'Pour the water out carefully, with no cover, as to not let all the noodles spill out.',
-                'img': 'https://content.api.news/v3/images/bin/f255ac556d14a7ac610ad6c51f565322'
+                'img': 'https://content.api.news/v3/images/bin/f255ac556d14a7ac610ad6c51f565322',
+                'alt': ''
             }
         }
     },

@@ -6,10 +6,22 @@ function displayHint(){
 }
 
 function displayHintOne(){
-    let tipOne = $(`<div class='tip'></div>`);
-    let tipTwo = $(`<div class='tip'></div>`);
-    let tipThree = $(`<div class='tip'></div>`);
+    let tipOneContainer = $(`<div class='drain-tip col-4'></div>`);
+    let tipTwoContainer = $(`<div class='drain-tip col-4'></div>`);
+    let tipThreeContainer = $(`<div class='drain-tip col-4'></div>`);
+    let tips = [tipOneContainer, tipTwoContainer, tipThreeContainer]
     let steps = hint['steps'];
+    console.log(steps);
+
+    for(let i=1; i<4; i++){
+        tips[i-1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/>`)
+        tips[i-1].append(`<span class="drain-instructions col-12">${steps[i]['instructions']}</span>`)
+    }
+
+    return [tipOneContainer, tipTwoContainer, tipThreeContainer];
+
+
+
 }
 
 function displayHintTwo(){
