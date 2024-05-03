@@ -400,6 +400,8 @@ hint_data = {
         'name': 'Mincing Garlic',
         'recipe_id': '3',
         'img': 'https://www.deliciousmeetshealthy.com/wp-content/uploads/2020/03/Process-Shots-how-to-mince-garlic.jpg',
+        'alt': 'An image divided into four quadrants, each a visual representation of the steps to mince garlic.',
+        'pre_step': 'Remove some of the outer husks by pulling them apart with your fingers:',
         'steps': {
             1: 'Lay a clove flat on your cutting board and trim away the root end with the tip of your knife. Lay the flat side of your knife over the clove while holding the handle. With the heel of your other hand, carefully give your knife a gentle whack',
             2: 'Cut each clove into 4 or 5 pieces or slices',
