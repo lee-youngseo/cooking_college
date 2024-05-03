@@ -223,6 +223,16 @@
     list-style-type: none;
 }
 
+.hint-start{
+    border: thin solid black;
+    font-size: 24px;
+    background-color: lightgray;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
 #recipe-redirect{
     width: fit-content;
     padding: 5px;
