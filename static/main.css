@@ -193,3 +193,18 @@
     font-size: 16px;
     list-style-type: none;
 }
+
+#recipe-redirect{
+    width: fit-content;
+    padding: 5px;
+    border: black solid thin;
+    border-radius: 20px;
+    background-color: lightgray;
+    margin: auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#recipe-redirect:hover{
+    background-color: gray;
+}
