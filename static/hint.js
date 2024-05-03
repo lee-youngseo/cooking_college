@@ -48,6 +48,19 @@ function displayHintTwo(){
 
 function displayHintThree(){
     if(hintID===2){
+        let tipOneContainer = $(`<div class='avo-tip col-3'></div>`);
+        let tipTwoContainer = $(`<div class='avo-tip col-3'></div>`);
+        let tipThreeContainer = $(`<div class='avo-tip col-3'></div>`);
+        let tipFourContainer = $(`<div class='avo-tip col-3'>`)
+        let tips = [tipOneContainer, tipTwoContainer, tipThreeContainer, tipFourContainer]
+        let steps = hint['steps'];
+
+        for (let i = 1; i < 5; i++) {
+            tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/>`)
+            tips[i - 1].append(`<span class="avo-instructions">${steps[i]['instructions']}</span>`)
+        }
+
+        return [tipOneContainer, tipTwoContainer, tipThreeContainer, tipFourContainer];
 
     }
 

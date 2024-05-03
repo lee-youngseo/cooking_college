@@ -416,20 +416,24 @@ hint_data = {
             1: {
                 'instructions': 'Cut it in half, lengthwise',
                 'img': 'https://images.wsj.net/im-148170/square',
+                'alt': 'An image of somebody cutting an avocado lengthwise with a knife'
 
             },
             2: {
                 'instructions': 'Gently twist the halves apart',
-                'img': 'https://toriavey.com/images/2014/01/Avocado-3-292x219.jpg'
+                'img': 'https://toriavey.com/images/2014/01/Avocado-3-292x219.jpg',
+                'alt': 'An image of somebody twisting the halves of a cut avocado apart.'
             },
             3: {
                 'instructions': 'Use a knife to firmly whack the seed. Gently turn the knife and pull– the seed should come out',
-                'img': 'https://www.savorythoughts.com/wp-content/uploads/2022/07/How-To-Cut-An-Avocado-Savory-Thoughts-4.jpg'
+                'img': 'https://www.savorythoughts.com/wp-content/uploads/2022/07/How-To-Cut-An-Avocado-Savory-Thoughts-4.jpg',
+                'alt': 'An image of somebody whacking the exposed seed of an avocado cut in half lengthwise.'
 
             },
             4: {
                 'instructions': 'Peel off the skin and then cut as desired',
-                'img': 'https://www.bhg.com/thmb/4pykRKlyKx7aPN8rTZsaD7nyhoo=/1919x0/filters:no_upscale():strip_icc()/peeling-skin-off-avocado-7jRJDOFwaEbBhISHkFlt83-e5f0be859df04996ab17365c2e326310.jpg'
+                'img': 'https://www.bhg.com/thmb/4pykRKlyKx7aPN8rTZsaD7nyhoo=/1919x0/filters:no_upscale():strip_icc()/peeling-skin-off-avocado-7jRJDOFwaEbBhISHkFlt83-e5f0be859df04996ab17365c2e326310.jpg',
+                'alt': 'An image of the skin of half an avocado being peeled'
 
             },
         }
