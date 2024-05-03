@@ -213,6 +213,117 @@
     height: auto; /* Maintain the aspect ratio */
     display: flex;
 }
+
+#hints-container{
+    width: 100%;
+}
+#hint-items{
+    margin: auto;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+#recipe-redirect{
+    width: fit-content;
+    padding: 5px;
+    border: black solid thin;
+    border-radius: 20px;
+    background-color: lightgray;
+    margin: auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#recipe-redirect:hover{
+    background-color: gray;
+}
+
+.tip{
+    width: 100%;
+    height: 100%;
+
+}
+
+.tip img{
+    object-fit: cover;
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+}
+
+.tip-instructions{
+    display: block;
+    width: 100%;
+    border: thin solid black;
+    background-color: rgb(217,217,217);
+    color: rgb(89,89,89);
+    font-size: 20px;
+    padding: 3px;
+    text-align: center;
+
+}
+
+#mincing-img{
+    object-fit: cover;
+    max-width: 100%;
+}
+
+#mincing-pre{
+    font-size: 24px;
+}
+
+.mincing-step{
+    font-size: 20px;
+    padding: 5px;
+}
+
+#safe-tips-container{
+    width: 100%;
+    height: auto;
+}
+
+#unsafe-tips-container{
+    width: 100%;
+    height: auto;
+}
+
+#safe-title{
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    color: green;
+}
+
+#unsafe-title{
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    color: red;
+}
+
+#safe-list{
+    list-style-type: none;
+    text-align: center;
+    font-size: 28px;
+}
+
+#unsafe-list{
+    list-style-type: none;
+    text-align: center;
+    font-size: 28px;
+}
+
+.safe-item{
+    border: thin solid black;
+    margin-top: 5px;
+    background-color: lightgray;
+}
+
+.unsafe-item{
+    border: thin solid black;
+    margin-top: 5px;
+    background-color: lightgray;
+}
 .quiz_box{
     background-color: rgb(199, 140, 50);
     border-radius: 15px;

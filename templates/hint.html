@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <script src="{{url_for('static', filename='hint.js')}}"></script>
+    <script>
+        let hintID = {{ hint_id|tojson }};
+        let hint = {{ hint|tojson }};
+        //console.log(hint);
+    </script>
+
+    <div class="subtitle lilac"></div>
+    <div id="recipe-redirect"></div>
+    <br>
+    <div class="row" id="hint-container"></div>
+
+{% endblock %}
