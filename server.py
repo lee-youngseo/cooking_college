@@ -451,11 +451,13 @@ hint_data = {
         'steps': {
             1: {
                 'instructions': 'If you have an electric oven, you can set the oven to the desired temperature and it will ding when ready',
-                'img': 'https://www.pcrichard.com/dw/image/v2/BFXM_PRD/on/demandware.static/-/Sites-pcrichard-master-product-catalog/default/dw94bbe4aa/images/hires/Z_WFE775H0HZ.jpg?sw=800&sh=800&sm=fit'
+                'img': 'https://www.pcrichard.com/dw/image/v2/BFXM_PRD/on/demandware.static/-/Sites-pcrichard-master-product-catalog/default/dw94bbe4aa/images/hires/Z_WFE775H0HZ.jpg?sw=800&sh=800&sm=fit',
+                'alt': 'An electric oven.'
             },
             2: {
                 'instructions': 'But gas ovens do not alert you when the temperature is reached. For these ovens wait 15-20 min after setting the temperature',
-                'img': 'https://mobileimages.lowes.com/productimages/1c380e57-3c07-4711-a037-46f5ba183592/49870314.jpg'
+                'img': 'https://mobileimages.lowes.com/productimages/1c380e57-3c07-4711-a037-46f5ba183592/49870314.jpg',
+                'alt': 'A gas oven.'
             }
         }
     },

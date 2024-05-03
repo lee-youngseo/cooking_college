@@ -209,20 +209,20 @@
     background-color: gray;
 }
 
-.drain-tip{
+.tip{
     width: 100%;
     height: 100%;
 
 }
 
-.drain-tip img{
+.tip img{
     object-fit: cover;
     max-width: 100%;
     width: 500px;
     height: 300px;
 }
 
-.drain-instructions{
+.tip-instructions{
     display: block;
     width: 100%;
     border: thin solid black;
@@ -246,31 +246,6 @@
 .mincing-step{
     font-size: 20px;
     padding: 5px;
-}
-
-.avo-tip{
-    width: 100%;
-    height: 100%;
-
-}
-
-.avo-tip img{
-    object-fit: cover;
-    max-width: 100%;
-    width: 500px;
-    height: 300px;
-}
-
-.avo-instructions{
-    display: block;
-    width: 100%;
-    border: thin solid black;
-    background-color: rgb(217,217,217);
-    color: rgb(89,89,89);
-    font-size: 20px;
-    padding: 3px;
-    text-align: center;
-
 }
 
 #safe-tips-container{

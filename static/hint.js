@@ -7,18 +7,18 @@ function displayHint(){
 
 function displayHintOne(){
     if(hintID===0) {
-        let tipOneContainer = $(`<div class='drain-tip col-4'></div>`);
-        let tipTwoContainer = $(`<div class='drain-tip col-4'></div>`);
-        let tipThreeContainer = $(`<div class='drain-tip col-4'></div>`);
+        let tipOneContainer = $(`<div class='tip col-4'></div>`);
+        let tipTwoContainer = $(`<div class='tip col-4'></div>`);
+        let tipThreeContainer = $(`<div class='tip col-4'></div>`);
         let tips = [tipOneContainer, tipTwoContainer, tipThreeContainer]
         let steps = hint['steps'];
 
         for (let i = 1; i < 4; i++) {
             tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/>`)
-            tips[i - 1].append(`<span class="drain-instructions">${steps[i]['instructions']}</span>`)
+            tips[i - 1].append(`<span class="tip-instructions">${steps[i]['instructions']}</span>`)
         }
 
-        return [tipOneContainer, tipTwoContainer, tipThreeContainer];
+        return tips;
     }
 
 
@@ -48,19 +48,19 @@ function displayHintTwo(){
 
 function displayHintThree(){
     if(hintID===2){
-        let tipOneContainer = $(`<div class='avo-tip col-3'></div>`);
-        let tipTwoContainer = $(`<div class='avo-tip col-3'></div>`);
-        let tipThreeContainer = $(`<div class='avo-tip col-3'></div>`);
-        let tipFourContainer = $(`<div class='avo-tip col-3'>`)
+        let tipOneContainer = $(`<div class='tip col-3'></div>`);
+        let tipTwoContainer = $(`<div class='tip col-3'></div>`);
+        let tipThreeContainer = $(`<div class='tip col-3'></div>`);
+        let tipFourContainer = $(`<div class='tip col-3'>`)
         let tips = [tipOneContainer, tipTwoContainer, tipThreeContainer, tipFourContainer]
         let steps = hint['steps'];
 
         for (let i = 1; i < 5; i++) {
             tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/>`)
-            tips[i - 1].append(`<span class="avo-instructions">${steps[i]['instructions']}</span>`)
+            tips[i - 1].append(`<span class="tip-instructions">${steps[i]['instructions']}</span>`)
         }
 
-        return [tipOneContainer, tipTwoContainer, tipThreeContainer, tipFourContainer];
+        return tips;
 
     }
 
@@ -94,6 +94,17 @@ function displayHintFour(){
 
 function displayHintFive(){
     if(hintID===4){
+        let tipOneContainer = $(`<div class='tip col-6'></div>`);
+        let tipTwoContainer = $(`<div class='tip col-6'></div>`);
+        let tips = [tipOneContainer, tipTwoContainer];
+        let steps = hint['steps'];
+
+        for (let i = 1; i < 3; i++) {
+            tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/>`)
+            tips[i - 1].append(`<span class="tip-instructions">${steps[i]['instructions']}</span>`)
+        }
+
+        return tips;
 
     }
 
@@ -104,7 +115,6 @@ $(function(){
 
     $('#recipe-redirect').on('click', function(){
         window.location.href = `/learn_recipe/${hint['recipe_id']}/instructions`;
-
     })
 
 })
