@@ -59,6 +59,21 @@
     font-family: 'Roboto';
     text-align: center;
 }
+.col-4 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.subtitle-button {
+    text-align: center;
+}
+
+#next_button, #back_button {
+    margin: 0 auto;
+}
 
 .minititle {
     font-size: x-medium;
@@ -116,6 +131,20 @@
 
 .subtitle-button:hover {
     background-color:  #e0ff78;
+}
+#quiz-start-button{
+    background-color: #e0ff78;
+    font-size: 25px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border: thin solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+
 }
 
 #quiz-start-button:hover{
@@ -294,4 +323,28 @@
     border: thin solid black;
     margin-top: 5px;
     background-color: lightgray;
+}
+.quiz_box{
+    background-color: rgb(199, 140, 50);
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 20px;    
+    width: 650px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, rgb(158, 103, 15), rgb(255, 191, 128));
+
+
+}
+
+#cooking-mama-button{
+    height: 100px;
+    width: 100px;
+    margin-right: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color:  #edd5ff;
 }
