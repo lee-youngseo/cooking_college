@@ -67,10 +67,29 @@ function displayHintThree(){
 }
 
 function displayHintFour(){
-    if(hintID===3){
+    if(hintID===3) {
+        let safeContainer = $(`<div id='safe-tips-container' class="col-6"><span id="safe-title">Safe</span></div>`);
+        let unsafeContainer = $(`<div id='unsafe-tips-container' class="col-6">
+            <span id="unsafe-title">Not Safe</span></div>`);
+        let safeList = $("<ul id='safe-list'></ul>");
+        let unsafeList = $("<ul id='unsafe-list'></ul>")
 
+        let safeItems = hint['safe'];
+        let unsafeItems = hint['unsafe'];
+
+        safeItems.forEach(function (item) {
+            safeList.append($(`<li class='safe-item'>${item}</li>`));
+
+        })
+        unsafeItems.forEach(function (item) {
+            unsafeList.append($(`<li class='unsafe-item'>${item}</li>`))
+        })
+
+        safeContainer.append(safeList);
+        unsafeContainer.append(unsafeList);
+
+        return [safeContainer, unsafeContainer];
     }
-
 }
 
 function displayHintFive(){

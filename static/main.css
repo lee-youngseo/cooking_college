@@ -272,3 +272,51 @@
     text-align: center;
 
 }
+
+#safe-tips-container{
+    width: 100%;
+    height: auto;
+}
+
+#unsafe-tips-container{
+    width: 100%;
+    height: auto;
+}
+
+#safe-title{
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    color: green;
+}
+
+#unsafe-title{
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    color: red;
+}
+
+#safe-list{
+    list-style-type: none;
+    text-align: center;
+    font-size: 28px;
+}
+
+#unsafe-list{
+    list-style-type: none;
+    text-align: center;
+    font-size: 28px;
+}
+
+.safe-item{
+    border: thin solid black;
+    margin-top: 5px;
+    background-color: lightgray;
+}
+
+.unsafe-item{
+    border: thin solid black;
+    margin-top: 5px;
+    background-color: lightgray;
+}
