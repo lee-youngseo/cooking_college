@@ -394,7 +394,7 @@ hint_data = {
                 'alt': 'Person emptying a pot full of noodles into a colander placed in a sink.',
             },
             2: {
-                'instructions': 'Cover the pot with a lid and open slightly as you ',
+                'instructions': 'Cover the pot with a lid and open slightly as you tilt the pot to pour out water.',
                 'img': 'https://qph.cf2.quoracdn.net/main-qimg-ced01ea966c6ef0272ac200ad151b7a2-lq',
                 'alt': 'Person emptying'
             },
