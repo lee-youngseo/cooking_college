@@ -226,11 +226,15 @@
 .hint-start{
     border: thin solid black;
     font-size: 24px;
-    background-color: lightgray;
+    background-color: #e9ccff;
     margin-top: 10px;
     text-align: center;
     padding: 5px;
     cursor: pointer;
+}
+
+.hint-start:hover {
+    background-color:  #e0ff78;
 }
 
 #recipe-redirect{
