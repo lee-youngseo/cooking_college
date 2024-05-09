@@ -49,13 +49,21 @@ $(document).ready(function() {
                 </div>
                 <div class="subtitle-button">${instruction.step}</div>
                 <br>
-                ${(currentStep === 2 && recipeId === 3) ? `<a class="subtitle-button" href="/hints/0" target="_blank">Hints for Draining!</a> <br>` : ''}
-                ${(currentStep === 3 && recipeId === 3) ? `<a class="subtitle-button" href="/hints/1" target="_blank">Hints for Mincing Garlic!</a> <br>` : ''}
-                ${(currentStep === 1 && recipeId === 1) ? `<a class="subtitle-button" href="/hints/2" target="_blank">Hints for Cutting Avocados!</a> <br>` : ''} 
-                ${(currentStep === 2 && recipeId === 1) ? `<a class="subtitle-button" href="/hints/3" target="_blank">Microwave Safe Dishes!</a> <br>` : ''}  
-                ${(currentStep === 1 && recipeId === 2) ? `<a class="subtitle-button" href="/hints/4" target="_blank">Learn About Preheating an Oven!</a> <br>` : ''}
-                ${(currentStep === totalSteps && currentStep !== 1) ? `<a class="subtitle-button" href="/learn_recipe/${recipeId}">Recipe Home</a>` : ''}
-                ${(currentStep === totalSteps && currentStep !== 1) ? `<a class="subtitle-button" href="/test_recipe/${recipeId}">Test yourself!</a>` : ''}
+                <div id="instructions_buttons">
+                    ${(currentStep === 2 && recipeId === 3) ? `<a class="subtitle-button" href="/hints/0" target="_blank">Hints for Draining!</a> <br>` : ''}
+                    ${(currentStep === 3 && recipeId === 3) ? `<a class="subtitle-button" href="/hints/1" target="_blank">Hints for Mincing Garlic!</a> <br>` : ''}
+                    ${(currentStep === 1 && recipeId === 1) ? `<a class="subtitle-button" href="/hints/2" target="_blank">Hints for Cutting Avocados!</a> <br>` : ''} 
+                    ${(currentStep === 2 && recipeId === 1) ? `<a class="subtitle-button" href="/hints/3" target="_blank">Microwave Safe Dishes!</a> <br>` : ''}  
+                    ${(currentStep === 1 && recipeId === 2) ? `<a class="subtitle-button" href="/hints/4" target="_blank">Learn About Preheating an Oven!</a> <br>` : ''}
+                </div>
+                <div class= "row">
+                    <div class="col-sm">
+                        ${(currentStep === totalSteps && currentStep !== 1) ? `<a class="subtitle-button" href="/learn_recipe/${recipeId}">Recipe Home</a>` : ''}
+                    </div>
+                    <div class="col-sm">
+                        ${(currentStep === totalSteps && currentStep !== 1) ? `<a class="subtitle-button" href="/test_recipe/${recipeId}">Test yourself!</a>` : ''}
+                    </div>
+                </div>
             </div>`
         );
     }
@@ -64,6 +72,7 @@ $(document).ready(function() {
         if (currentStep === 1) {
             $('#back_button').text('Recipe Home');
         } else if (currentStep === totalSteps) {
+            $('#back_button').hide();
             $('#next_button').hide();
         } else {
             $('#back_button').text('Back');

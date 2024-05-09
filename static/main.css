@@ -224,13 +224,16 @@
 }
 
 .hint-start{
-    border: thin solid black;
-    font-size: 24px;
+    border: 1px solid gray;
     background-color: #e9ccff;
     margin-top: 10px;
     text-align: center;
     padding: 5px;
     cursor: pointer;
+    font-size: large;
+    font-family: 'Roboto Mono';
+    color: rgb(63, 63, 63);  
+    padding: 10px;  
 }
 
 .hint-start:hover {
@@ -364,6 +367,6 @@
 .instructions_buttons{
     display: flex;
     justify-content: center;
-    width:fit-content;
+    width: fit-content;
     margin-top: 20px;
 }

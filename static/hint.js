@@ -1,8 +1,8 @@
 function displayHint(){
     let hints = [displayHintOne(), displayHintTwo(), displayHintThree(), displayHintFour(), displayHintFive()];
     $('.subtitle').append(`${hint['name']}`);
-    $('#recipe-redirect').append(`Go to recipe`);
     $('#hint-container').append(hints[hintID]);
+    $('#recipe-redirect').append(`Go to recipe`);
 }
 
 function displayHintOne(){
