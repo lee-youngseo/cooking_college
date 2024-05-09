@@ -360,3 +360,10 @@
     border-radius: 20px;
     background-color:  #edd5ff;
 }
+
+.instructions_buttons{
+    display: flex;
+    justify-content: center;
+    width:fit-content;
+    margin-top: 20px;
+}

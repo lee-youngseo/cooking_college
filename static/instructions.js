@@ -55,6 +55,7 @@ $(document).ready(function() {
                 ${(currentStep === 2 && recipeId === 1) ? `<a class="subtitle-button" href="/hints/3" target="_blank">Microwave Safe Dishes!</a> <br>` : ''}  
                 ${(currentStep === 1 && recipeId === 2) ? `<a class="subtitle-button" href="/hints/4" target="_blank">Learn About Preheating an Oven!</a> <br>` : ''}
                 ${(currentStep === totalSteps && currentStep !== 1) ? `<a class="subtitle-button" href="/learn_recipe/${recipeId}">Recipe Home</a>` : ''}
+                ${(currentStep === totalSteps && currentStep !== 1) ? `<a class="subtitle-button" href="/test_recipe/${recipeId}">Test yourself!</a>` : ''}
             </div>`
         );
     }

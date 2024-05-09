@@ -20,9 +20,6 @@ function displayHintOne(){
 
         return tips;
     }
-
-
-
 }
 
 function displayHintTwo(){
