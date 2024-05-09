@@ -36,18 +36,23 @@ $(document).ready(function() {
         }
     });
 
-    function displayInstruction(instruction) {
-        $('#instructions_container').empty();
-        console.log("Appending instruction:", instruction.step);
-        $('#instructions_container').append(
-            `<div class="col-4">
-                <div class="subtitle">Step ${currentStep}</div>
-                <div class="image-container">
-                    <img src="${instruction.image}" class="view-image square" alt="${instruction.step}">
-                </div>
-                <div class="subtitle-button">${instruction.step}</div>
-                <br>
-            </div>`
+function displayInstruction(instruction) {
+    $('#instructions_container').empty();
+    console.log("Appending instruction:", instruction.step);
+    $('#instructions_container').append(
+        `<div class="col-4">
+            <div class="subtitle">Step ${currentStep}</div>
+            <div class="image-container">
+                <img src="${instruction.image}" class="view-image square" alt="${instruction.step}">
+            </div>
+            <div class="subtitle-button">${instruction.step}</div>
+            <br>
+            ${(currentStep === 2 && recipeId === 3) ? `<a class="subtitle-button" href="/hints/0" target="_blank">Hints for Draining!</a> <br>` : ''}
+            ${(currentStep === 3 && recipeId === 3) ? `<a class="subtitle-button" href="/hints/1" target="_blank">Hints for Mincing Garlic!</a> <br>` : ''}
+            ${(currentStep === 1 && recipeId === 1) ? `<a class="subtitle-button" href="/hints/2" target="_blank">Hints for Cutting Avocados!</a> <br>` : ''} 
+            ${(currentStep === 2 && recipeId === 1) ? `<a class="subtitle-button" href="/hints/3" target="_blank">Microwave Safe Dishes!</a> <br>` : ''}  
+            ${(currentStep === 1 && recipeId === 2) ? `<a class="subtitle-button" href="/hints/4" target="_blank">Learn About Preheating an Oven!</a> <br>` : ''}
+        </div>`
     );
 }
 
