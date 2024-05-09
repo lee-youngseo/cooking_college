@@ -14,7 +14,7 @@ function displayHintOne(){
         let steps = hint['steps'];
 
         for (let i = 1; i < 4; i++) {
-            tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/>`)
+            tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/><br>`)
             tips[i - 1].append(`<span class="tip-instructions">${steps[i]['instructions']}</span>`)
         }
 
@@ -27,7 +27,7 @@ function displayHintTwo(){
         let stepsContainer = $(`<div id="mincing-steps-container" class="col-6">
             <span id="mincing-pre">${hint['pre_step']}</span></div>`);
         let mincingImg = $(`<div id="mincing-img-container" class="col-6">
-            <img id="mincing-img" src=${hint['img']} alt="${hint['alt']}"</div>`);
+            <img id="mincing-img" src=${hint['img']} alt="${hint['alt']}"</div><br>`);
         let stepsList = $(`<ol id="mincing-steps"></ol>`);
         let steps = hint['steps'];
 
@@ -53,8 +53,8 @@ function displayHintThree(){
         let steps = hint['steps'];
 
         for (let i = 1; i < 5; i++) {
-            tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/>`)
-            tips[i - 1].append(`<span class="tip-instructions">${steps[i]['instructions']}</span>`)
+            tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/><br>`)
+            tips[i - 1].append(`<br><span class="tip-instructions">${steps[i]['instructions']}</span>`)
         }
 
         return tips;
@@ -97,8 +97,8 @@ function displayHintFive(){
         let steps = hint['steps'];
 
         for (let i = 1; i < 3; i++) {
-            tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/>`)
-            tips[i - 1].append(`<span class="tip-instructions">${steps[i]['instructions']}</span>`)
+            tips[i - 1].append(`<img src=${steps[i]['img']} alt=${steps[i]['alt']}/><br>`)
+            tips[i - 1].append(`<br><span class="tip-instructions">${steps[i]['instructions']}</span>`)
         }
 
         return tips;
