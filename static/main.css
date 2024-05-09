@@ -242,14 +242,14 @@
     padding: 5px;
     border: black solid thin;
     border-radius: 20px;
-    background-color: lightgray;
+    background-color: #e9ccff;
     margin: auto;
     font-size: 16px;
     cursor: pointer;
 }
 
 #recipe-redirect:hover{
-    background-color: gray;
+    background-color: #e0ff78;
 }
 
 .tip{
@@ -349,8 +349,6 @@
     justify-content: center;
     margin: auto;
     background-image: linear-gradient(to bottom right, rgb(158, 103, 15), rgb(255, 191, 128));
-
-
 }
 
 #cooking-mama-button{
